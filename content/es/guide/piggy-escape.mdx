@@ -1,0 +1,174 @@
+export const metadata = {
+  title: "Guía completa de Piggy Escape: Cómo superar cada nivel de Farm Jam",
+  description: "Domina Piggy Escape con nuestra guía estratégica definitiva. Aprende mecánicas de movimiento, esquiva peligros explosivos y supera atascos difíciles rápidamente.",
+  category: "guide",
+  date: "2026-09-21",
+};
+
+Navegar por un caótico atasco en la granja requiere una aguda percepción espacial, movimientos calculados y mucha paciencia. En **piggy escape**, los jugadores se enfrentan a un embotellamiento animal cada vez más denso en el que un solo toque en falso puede desencadenar un callejón sin salida explosivo. Tanto si estás atascado en las primeras cuadrículas de la granja como si intentas resolver los niveles de puzle más avanzados, dominar **piggy escape** se reduce a comprender la prioridad direccional y despejar caminos con precisión quirúrgica. 
+
+En esta guía completa, desglosamos las reglas fundamentales del desplazamiento animal, analizamos los principales peligros ambientales y trazamos estrategias eficaces para ayudarte a rescatar a cada compañero de la granja sin fallar ningún nivel.
+
+## Mecánicas clave y cómo funciona Piggy Escape
+
+En esencia, el juego combina la lógica espacial de puzle de los clásicos juegos de atascos de tráfico (*parking jam*) con encantadores elementos 3D de gestión de granjas. Te encontrarás con un corral o pastizal vallado repleto de animales de granja —principalmente cerdos— orientados en distintas direcciones. Tu objetivo es sencillo: vaciar el corral por completo guiando a cada animal fuera de la pantalla a lo largo de un camino despejado.
+
+### El sistema de toques para arrear
+
+Cada animal en el corral actúa como una unidad direccional individual. Al tocar un animal, este inicia una carrera automática hacia adelante. Si su trayectoria frontal está libre de obstáculos, el animal corre con fluidez fuera del corral y llega a un pastizal seguro, liberando un espacio valioso en el tablero.
+
+Sin embargo, si la línea de avance de un animal está bloqueada por otra criatura, un poste de cerca o elementos estáticos del escenario, simplemente choca, se detiene y permanece atascado en su posición original o ligeramente desplazada. Como los animales no pueden doblar esquinas ni desviarse hacia los lados por sí mismos, cada toque debe evaluarse según el vector de orientación actual de la criatura.
+
+### Congestión del tablero y densidad espacial
+
+Los primeros niveles presentan recintos espaciosos con salidas evidentes. A medida que avanzas hacia niveles de mayor dificultad, la densidad aumenta drásticamente:
+
+- **Grupos estrechamente entrelazados:** Los animales están alineados cabeza con cola, lo que significa que el animal A no puede moverse hasta que salga el animal B, pero el animal B está bloqueado por el animal C.
+- **Cuellos de botella estrechos:** Las puertas de una sola casilla obligan a los animales a salir de uno en uno.
+- **Orientaciones mixtas:** Los animales miran hacia adentro, unos frente a otros, formando bloqueos circulares que deben desenredarse desde los bordes exteriores.
+
+| Acción / Mecánica | Activador | Resultado en el juego | Valor estratégico |
+| :--- | :--- | :--- | :--- |
+| **Toque de salida directa** | Tocar un animal con un camino frontal despejado | El animal sale disparado fuera de la pantalla | Libera espacio en el tablero; abre caminos para los animales vecinos |
+| **Toque frontal bloqueado** | Tocar un animal frente a un obstáculo | El animal se detiene ante el obstáculo y se reinicia | Desperdicia una acción; puede activar peligros accidentalmente |
+| **Desbloqueo en cadena** | Despejar primero un obstáculo exterior | Abre una línea de visión para las unidades interiores | Ciclo fundamental para resolver cuadrículas densas |
+| **Colisión con peligro** | El animal entra en contacto con un barril/casilla explosiva activa | Explosión inmediata que causa la derrota en el nivel | Debe evitarse a toda costa mediante una planificación secuencial |
+
+Comprender estas interacciones fundamentales es el primer paso para resolver niveles avanzados sin la frustración del ensayo y error.
+
+## Peligros clave y obstáculos ambientales
+
+A medida que los puzles evolucionan, vaciar el corral ya no se trata solo de encontrar líneas abiertas. Los desarrolladores incorporan elementos interactivos, barreras y artefactos explosivos que castigan los toques descuidados. Para mantener tu racha en **piggy escape**, debes identificar y gestionar cada peligro del tablero antes de realizar tu primer movimiento.
+
+### Peligros explosivos y cajas volátiles
+
+La mecánica más implacable en los niveles superiores son los obstáculos explosivos. Repartidos por pastizales congestionados, estos objetos volátiles detonan si un animal choca contra ellos a gran velocidad:
+
+1. **Barriles de dinamita (TNT) fijos:** Situados cerca de las salidas del perímetro o justo detrás de animales bloqueados. Dirigir a un animal hacia un barril activa una pantalla de derrota tan colorida como definitiva.
+2. **Placas de presión y temporizadores:** Ciertos obstáculos requieren un cálculo preciso del tiempo, penalizando a los jugadores que tocan rápidamente sin analizar las reacciones en cadena resultantes.
+
+### Elementos del escenario y vallas
+
+A diferencia de los animales, que acaban abandonando el tablero, los elementos estáticos del entorno permanecen fijos durante todo el nivel. Entre ellos se incluyen:
+
+- **Vallas de madera:** Delimitan el perímetro, pero con frecuencia presentan recovecos irregulares que crean callejones sin salida.
+- **Fardos de heno y comederos:** Actúan como obstáculos sólidos e inamovibles en el centro de la cuadrícula, obligándote a desviar a los animales a su alrededor en lugar de cruzar por el centro.
+- **Charcos de lodo:** Pueden alterar la velocidad de movimiento o bloquear caminos, complicando el ritmo de las salidas.
+
+| Tipo de obstáculo | Nivel de amenaza | Impacto en el tablero | Estrategia de respuesta |
+| :--- | :--- | :--- | :--- |
+| **Barriles de TNT / Explosivos** | Crítico | Derrota instantánea en el nivel al chocar | Identifica todas las orientaciones hacia el explosivo; nunca toques a un animal alineado con él hasta haber despejado o sorteado el peligro |
+| **Esquinas de la valla perimetral** | Moderado | Crea trampas sin salida para cerdos orientados hacia afuera | Avanza hacia el interior; despeja los animales orientados a puertas abiertas antes de ocuparte de las unidades acorraladas |
+| **Fardos de heno y comederos** | De bajo a moderado | Bloquea permanentemente caminos en línea recta | Trátalos como bordes fijos del tablero; guía a los cerdos de forma paralela en vez de hacia ellos |
+| **Círculos de animales entrelazados** | Alto | Impide cualquier carrera frontal inmediata | Localiza al animal «clave» con una salida perpendicular abierta para romper el bucle |
+
+Al evaluar la distribución de los peligros antes de tocar la pantalla, eliminas errores evitables y mantienes tu ritmo de resolución.
+
+## Guía táctica paso a paso para atascos complejos en la granja
+
+Resolver puzles de alta densidad requiere una metodología sistemática en lugar de toques al azar. Al enfrentarte a un atasco desafiante en la granja, seguir un flujo de trabajo estructurado en cuatro fases garantiza el éxito constante.
+
+### Fase 1: Barrido del perímetro
+
+Antes de hacer cualquier movimiento, examina los bordes exteriores del pastizal. La capa más externa de animales casi siempre contiene al menos una o dos unidades con un camino despejado hacia una puerta de salida. 
+
+- Busca cerdos orientados directamente hacia las aberturas de la valla.
+- Toca primero a estos corredores perimetrales.
+- Observa cómo su salida deja al descubierto los flancos y las trayectorias frontales de los animales de la siguiente fila.
+
+### Fase 2: Rastrear salidas a la inversa
+
+Cuando la disposición restante parezca completamente bloqueada, elige una puerta de salida vacía y rastrea el camino hacia atrás hacia el interior del corral. Pregúntate: *¿Qué animal está en posición de usar esta puerta? ¿Qué lo está bloqueando en este momento?* 
+
+Al trabajar hacia atrás desde la meta hasta el bloqueador, identificas la cadena de dependencias exacta que debes resolver. Si el Cerdo A necesita llegar a la Puerta 1, pero el Cerdo B se interpone en su camino, tu objetivo inmediato pasa a ser encontrar una salida para el Cerdo B.
+
+### Fase 3: Desmantelar la congestión central
+
+Una vez despejadas las vías exteriores y trazadas las cadenas de dependencia, afronta el nudo central. Los animales del núcleo a menudo se miran de frente en grupos muy apretados:
+
+1. **Identifica la pieza clave:** Encuentra el animal cuya retirada libera a dos o más unidades adyacentes.
+2. **Evita toques prematuros:** Nunca toques a un animal solo para ver si se mueve; un animal detenido a mitad de un canal estrecho puede bloquear inadvertidamente otra ruta de salida viable.
+3. **Mantén pasillos despejados:** Conserva abierta al menos una vía principal vertical u horizontal a lo largo de toda la cuadrícula para que sirva como ruta de escape para las unidades interiores.
+
+### Fase 4: Extracción segura cerca de peligros
+
+Al gestionar animales situados cerca de barriles explosivos, toma precauciones adicionales:
+
+- Comprueba minuciosamente la alineación exacta con las casillas. Un animal que parece no estar alineado aún podría rozar la caja de colisión (*hitbox*) de un explosivo cercano.
+- Despeja cualquier distracción para evitar que tus dedos resbalen en la pantalla.
+- Ejecuta los toques finales con deliberación para concluir el nivel limpiamente.
+
+| Fase | Enfoque estratégico | Objetivo principal | Error común de los jugadores |
+| :--- | :--- | :--- | :--- |
+| **Fase 1: Barrido del perímetro** | Bordes exteriores y puertas abiertas | Retirar inmediatamente los animales desbloqueados | Tocar animales interiores bloqueados antes de despejar el contorno |
+| **Fase 2: Rastrear a la inversa** | De las puertas hacia el interior | Establecer cadenas de dependencia claras | Adivinar movimientos sin comprobar la puerta objetivo |
+| **Fase 3: Desmantelar el núcleo** | Grupos centrales de animales | Desbloquear unidades clave para abrir múltiples vías | Provocar atascos secundarios en estrechas rutas de escape |
+| **Fase 4: Extracción con peligros** | Explosivos y esquinas estrechas | Sacar unidades de forma segura sin tocar las cajas de colisión de dinamita | Apresurarse en los toques finales y detonar un barril |
+
+Practicar esta secuencia de cuatro pasos transforma tableros caóticos en soluciones ordenadas y predecibles.
+
+## Personalización, progresión de animales y funciones
+
+Más allá de resolver puzles, el juego incorpora mecánicas ligeras de progresión y personalización que recompensan el juego continuado. Comprender cómo funcionan estos sistemas aporta una motivación adicional para superar los hitos de niveles más desafiantes.
+
+### Armario y personalización de cerdos
+
+A medida que superas niveles y completas objetivos de eventos, desbloqueas accesorios cosméticos para personalizar a tus cerditos:
+
+- **Sombreros y accesorios para la cabeza:** Desde sombreros de paja de granjero hasta divertidos gorros festivos.
+- **Atuendos:** Trajes temáticos que se desbloquean a través de hitos de temporada y fases de eventos especiales.
+- **Variedad visual:** Las mejoras cosméticas no alteran las cajas de colisión ni las velocidades de movimiento, lo que garantiza que el equilibrio del juego se base estrictamente en la habilidad, al tiempo que permite a los jugadores dar un toque personal a su granja.
+
+### Experiencia de juego y opiniones sobre la progresión
+
+Según los comentarios de la comunidad de jugadores habituales de puzles, la curva de dificultad aumenta de manera progresiva hasta el nivel 400 y posteriores. Las experiencias compartidas por los usuarios en tiendas digitales destacan tanto las virtudes del juego como los aspectos donde conviene moderar las expectativas:
+
+- **Curva de dificultad:** La mayoría de los jugadores elogia la creciente complejidad de la lógica espacial, señalando que los niveles más avanzados exigen varios minutos de planificación previa.
+- **Registro de logros:** La comunidad señala retrasos ocasionales en la sincronización de logros con plataformas de terceros, aunque el progreso de los niveles en el juego y los desbloqueos cosméticos siguen funcionando con normalidad.
+- **Ritmo y gestión de anuncios:** Como en muchos juegos casuales de puzles, aparecen anuncios entre niveles. Los jugadores recomiendan usar el modo sin conexión cuando sea posible o hacer breves pausas entre bloques densos de puzles para mantener la concentración.
+
+Para conocer el lanzamiento oficial, consulta la [página de Piggy Escape en Google Play Store](https://play.google.com/store/apps/details?id=piggy.escape.jam.farm.puzzle.game), donde se publican periódicamente actualizaciones, nuevos niveles y parches de los desarrolladores.
+
+| Función del juego | Función dentro del juego | Valor para el jugador | Consejo de la comunidad |
+| :--- | :--- | :--- | :--- |
+| **Progresión de niveles** | Desbloquea cuadrículas de granja secuenciales con dificultad creciente | Agudiza la lógica espacial y la resolución de problemas | Estudia los tableros antes de tocar para mantener rachas altas de victoria |
+| **Armario cosmético** | Permite vestir a los cerdos con sombreros, atuendos y accesorios | Aporta encanto visual y estilo personalizado | Se obtiene progresando; no afecta a las cajas de colisión de movimiento |
+| **Modo de juego sin conexión** | Permite resolver puzles por completo sin conexión a internet | Juega en cualquier lugar sin gastar datos | Muy útil para trayectos de viaje o sesiones de juego sin interrupciones |
+| **Niveles de eventos temporales** | Tableros de tiempo limitado con disposiciones de obstáculos únicas | Otorga recompensas cosméticas exclusivas de temporada | Da prioridad a estos eventos antes de que expiren según el calendario de actualizaciones |
+
+Aprovechar estas funciones hace que el recorrido a través de cientos de puzles en el pastizal sea siempre entretenido y estimulante.
+
+## Consejos profesionales para mejorar tu tasa de éxito
+
+Para mejorar tu nivel de juego y superar fases complicadas sin depender de reintentos, incorpora estas tácticas de puzle contrastadas:
+
+### 1. La regla de «Pausar y observar»
+Al comenzar un nuevo nivel, evita la tentación de empezar a tocar de inmediato. Dedica de cinco a diez segundos a identificar:
+- Dónde están ubicadas las salidas principales.
+- Qué animales están orientados directamente hacia los barriles peligrosos.
+- Dónde se encuentra la mayor concentración de animales.
+
+### 2. Prioriza el movimiento perpendicular
+Los animales situados de forma perpendicular a un gran atasco suelen ser la clave para desatascar la situación. Al desplazarse en dirección transversal y no hacia la fila principal, sacarlos crea huecos de paso inmediatos que permiten al resto de la piara avanzar.
+
+### 3. Atento a las cajas de colisión ocultas
+Algunos animales más grandes o variantes estilizadas tienen perfiles visuales más anchos. Comprueba siempre que el camino frontal de un animal esté completamente libre de la cola o el hocico de un vecino adyacente antes de tocarlo. Un simple roce cuenta como bloqueo y dejará al animal varado.
+
+### 4. Aprovecha la capacidad sin conexión
+Si los anuncios emergentes interrumpen tu concentración en niveles complejos de lógica, recuerda que el juego permite jugar sin conexión. Desconectarte de la red de datos te proporcionará un entorno sin distracciones para concentrarte por completo en superar los desafíos más avanzados del atasco en la granja.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Qué debo hacer si un animal en Piggy Escape no se mueve tras tocarlo?
+Si un animal no se mueve al tocarlo, significa que su camino frontal está bloqueado por otro animal, una valla o un obstáculo del entorno. Observa detenidamente su línea de visión. Debes despejar primero el objeto o animal que estorba para que pueda salir del corral con éxito.
+
+### ¿Pueden los animales girar o cambiar de dirección durante la carrera?
+No. Los animales del juego solo se desplazan en línea recta según la dirección hacia la que miran al ser tocados. No pueden girar esquinas ni esquivar caminos sinuosos por sí mismos. Tu labor es despejar un pasillo recto y directo hacia la puerta de salida para cada unidad.
+
+### ¿Qué sucede si un animal choca contra un barril explosivo?
+Chocar contra un peligro explosivo provoca la derrota inmediata en el nivel. Tendrás que reiniciar el puzle desde el principio. Para evitarlo, identifica todos los barriles explosivos al inicio del nivel y evita tocar animales cuya trayectoria frontal coincida con el peligro.
+
+### ¿Se puede jugar a Piggy Escape sin conexión activa a internet?
+Sí, la experiencia principal de puzles es completamente funcional sin conexión. Puedes resolver niveles, avanzar en las etapas y poner en práctica tus estrategias de desbloqueo en la granja sin necesidad de Wi-Fi ni datos móviles.

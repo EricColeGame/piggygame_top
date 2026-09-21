@@ -1,0 +1,147 @@
+export const metadata = {
+  title: "Piggy Build-Modus Leitfaden: So designst, skriptest und teilst du eigene Maps",
+  description: "Meistere den Piggy Build-Modus mit unserem umfassenden Leitfaden. Lerne Map-Design, Event-Trigger, NPC-Pathfinding und Tipps für ausbalancierte Horror-Level.",
+  category: "modes",
+  date: "2026-09-21",
+};
+
+Der Schritt über die Standardkapitel von MiniToons Survival-Horror-Hit hinaus eröffnet ein völlig neues Maß an kreativer Freiheit. Das Meistern des **Piggy Build-Modus** verwandelt dich von einem fliehenden Überlebenden in den Architekten deiner eigenen schaurigen Labyrinthe und cineastischen Begegnungen. Egal, ob du klassische Escape-Room-Rätsel nachbauen oder komplexe, mehrstufige Herausforderungen erschaffen möchtest – der Einstieg in den **Piggy Build-Modus** gibt dir die volle Kontrolle über Map-Layouts, Item-Verteilung und das Verhalten der Gegner.
+
+Für angehende Schöpfer macht das Verständnis der Feinheiten des benutzerdefinierten Designs den Unterschied zwischen einer frustrierenden, zu Softlocks neigenden Map und einem unvergesslichen Community-Hit aus. Dieser Leitfaden erklärt alles von grundlegenden Baumechaniken über fortgeschrittene Trigger-Logik bis hin zu NPC-Pathfinding und der Nutzung von Shop-Assets.
+
+---
+
+## Erste Schritte im Piggy Build-Modus: Grundlegende Mechaniken und Steuerung
+
+Im Grunde erfordert das Erstellen eines eigenen Levels das Erlernen der Benutzeroberfläche und der Grid-Snap-Steuerung (Rasterausrichtung). Die Bau-Sandbox basiert auf einem blockbasierten Rastersystem, das sicherstellt, dass Wände, Türen und interaktive Einrichtungsgegenstände nahtlos und ohne Clipping aneinander ausgerichtet werden.
+
+Beim Betreten des Editors über den [Piggy build mode hub on Roblox](https://www.roblox.com/games/5252207880/Piggy-build-mode) erhalten Spieler eine Palette aus Grundgeometrien, interaktiven Objekten und Event-Tools. Das Vertrautmachen mit Hotkeys und Rasterabständen beschleunigt deinen Arbeitsablauf erheblich.
+
+### Wichtige Steuerungselemente der Benutzeroberfläche
+
+Das Navigieren im 3D-Raum des Editors erfordert spezielle Kamera- und Werkzeugsteuerungen. Anders als im regulären Spiel kann die Bau-Kamera frei über die Arbeitsfläche fliegen, sodass du hohe Decken, versteckte Lüftungsschächte und unterirdische Tunnel problemlos inspizieren kannst.
+
+| Werkzeug / Aktion | Standardtaste / Eingabe | Funktion | Praktische Anwendung |
+| :--- | :--- | :--- | :--- |
+| **Bewegen / Platzieren** | Linksklick | Platziert den ausgewählten Block oder die Entität | Verlegen von Böden, Wänden und Grundstrukturen |
+| **Drehen** | R- / T-Tasten | Dreht das ausgewählte Asset um die X-/Y-Achse | Ausrichten von Türöffnungen, Eckstücken und diagonalen Requisiten |
+| **Löschen** | Rücktaste / Werkzeugauswahl | Entfernt das markierte Asset von der Fläche | Beheben von Baufehlern oder Überarbeiten von Raumlayouts |
+| **Rasterausrichtung umschalten** | UI-Einstellungsmenü | Schaltet zwischen 1-Stud-, 2-Stud- oder freier Platzierung um | Präzise Ausrichtung von Rätselobjekten vs. dekorative Details |
+| **Testmodus** | Play-Button in der oberen Leiste | Lädt die Map im aktiven Überlebenden-/Bot-Status | Überprüfen von Sprungdistanzen und Türentriegelungsmechaniken |
+
+Das frühzeitige Beherrschen dieser Werkzeuge verhindert fehlerhafte Hitboxen. Erfahrungsberichte von Spielern betonen häufig, dass eine aktivierte Rasterausrichtung beim Rohbau winzige Lücken verhindert, durch die Items durch die Geometrie fallen könnten.
+
+---
+
+## Wichtige Map-Komponenten: Blöcke, Türen und Schlüssel
+
+Jede fesselnde Map basiert auf einem intuitiven Fortschrittszyklus. Bei typischen Escape-Mechaniken durchsuchen Spieler Räume nach Schlüsseln, Werkzeugen (wie Schraubenschlüsseln, Hämmern und Holzbrettern) sowie Ablenkungsgegenständen, um verschlossene Durchgänge zu überwinden.
+
+Das Erstellen eines spannenden Rätsel-Layouts erfordert eine ausgewogene Balance zwischen Item-Platzierung und Monster-Patrouillenwegen. Ist ein Schlüssel zu leicht zu finden, verfliegt die Spannung; ist er in einem obskuren Winkel ohne visuelle Hinweise versteckt, führt das schnell zu Frustration.
+
+### Übersicht der interaktiven Komponenten
+
+Die Standardpalette bietet mehrere strukturelle und mechanische Elemente, die bestimmen, wie sich Spieler durch dein Level bewegen.
+
+| Komponente | Kategorie | Zweck | Best-Practice-Tipp |
+| :--- | :--- | :--- | :--- |
+| **Einfache Wand / Boden** | Struktur | Definiert Begrenzungen, Räume und Korridore | Variiere Texturen (Ziegel, Holz, Metall), um jedem Raum eine eigene Identität zu verleihen. |
+| **Schlüsseltür** | Interaktiv | Blockiert den Durchgang, bis der passende Schlüssel verwendet wird | Nutze farbcodierte Beleuchtung oder Rahmen, um Hinweise auf benötigte Schlüssel zu geben. |
+| **Verbretterte Barriere** | Interaktiv | Erfordert einen Hammer, um Bretter zu entfernen | An Engpässen platzieren, um durch das Abbaugeräusch hörbare Spannung zu erzeugen. |
+| **Lüftungsschächte** | Fortbewegung | Alternative Routen für kriechende Spieler | Sicherstellen, dass Bots nicht hineingelangen oder alternative Umwege nutzen müssen. |
+| **Item-Spawner** | Logik / Gameplay | Generiert Schlüssel, Treibstoff, Zahnräder oder Waffen | Spawner gleichmäßig verteilen; eine Anhäufung primärer Werkzeuge in einer Zone vermeiden. |
+
+Plane beim Platzieren von verschlossenen Toren und Items im Piggy Build-Modus immer einen klaren Abhängigkeitsbaum. Beispielsweise sollte der blaue Schlüssel ein Areal öffnen, das entweder den Schraubenschlüssel oder einen Hinweis auf den orangen Schlüssel enthält, um Sackgassen zu vermeiden.
+
+---
+
+## Fortgeschrittenes Level-Design: Verknüpfen von Events, Triggern und NPCs
+
+Eine statische Map mit einfachen Türen wird schnell vorhersehbar. Erfahrene Creator nutzen Trigger-Mechaniken, Verknüpfungsblöcke und maßgeschneiderte NPC-Begegnungen, um narrative Spannung und geskriptete Sequenzen in ihre Bauten einzubringen.
+
+Mit Triggern kannst du Umgebungsveränderungen basierend auf den Aktionen der Überlebenden auslösen. Beispielsweise kann das Betreten einer versteckten Druckplatte Sicherheitstore schließen, einen Alarm auslösen oder einen feindlichen Verfolger im Sektor spawnen lassen.
+
+### Konfigurieren von KI und Monster-Spawns
+
+Das NPC-Verhalten in benutzerdefinierten Levels basiert auf knotenpunktbasiertem Pathfinding (Wegfindung) oder direkter Sichtlinienverfolgung. Die Wahl des richtigen Bot-Typs und die Konfiguration seiner Spawn-Trigger bestimmen, wie bedrohlich die Gefahr wirkt.
+
+| NPC- / KI-Typ | Bewegungsgeschwindigkeit | Spezialfähigkeit | Empfohlener Map-Stil |
+| :--- | :--- | :--- | :--- |
+| **Standard-Infizierter** | Mittel (Entspricht Gehgeschwindigkeit) | Direkte Verfolgung bei Sichtkontakt | Ausgewogene Maps mit vielen Räumen zum Erkunden |
+| **Kriecher / Schachtjäger**| Schnell auf engem Raum | Kann niedrige Durchgänge passieren | Komplexe Maps mit verschachtelten Lüftungssystemen |
+| **Patrouillen-Bot** | Feste Route | Folgt festgelegten Wegpunkt-Markierungen | Stealth-fokussierte Abschnitte mit klaren Verstecken |
+| **Custom-Skin-Boss** | Variabel / Geskriptet | Gibt Warntöne oder eine Näherungsaura ab | Finale Fluchtsequenzen oder filmreife Inszenierungen |
+
+Community-Berichte heben hervor, dass das Platzieren von Bot-Spawns direkt neben den Überlebenden-Spawns einer der häufigsten Anfängerfehler ist. Gib Überlebenden stets mindestens 15 bis 20 Sekunden ungestörte Erkundungszeit, bevor du eine direkte physische Bedrohung einführst.
+
+```
+[Spawn-Zone] ---> [Erster sicherer Hub] ---> [Erstes Rätseltor]
+                                                 |
+                                                 v
+                                  [Trigger: Infizierten freilassen]
+```
+
+Indem du den Trigger hinter das erste gelöste Rätsel setzt, stellst du sicher, dass jeder Spieler die grundlegenden Mechaniken versteht, bevor der Überlebensdruck steigt.
+
+---
+
+## Der Build-Modus-Shop und das Freischalten benutzerdefinierter Assets
+
+Die Tiefe deiner kreativen Möglichkeiten erweitert sich durch den In-Game-Shop drastisch. Im Build-Modus-Shop können Creator spezielle Strukturpakete, atmosphärische Beleuchtungselemente, saisonale Dekorationen und individuelle NPC-Skins mit verdienten Tokens oder Event-Belohnungen erwerben.
+
+Die Investition in diese Assets verwandelt eine rein funktionale Map in ein atmosphärisches, fesselndes Erlebnis.
+
+### Beliebte Asset-Kategorien im Build-Modus-Shop
+
+| Kategorie | Typische Inhalte | Gameplay-Auswirkung | Kreativer Tipp |
+| :--- | :--- | :--- | :--- |
+| **Atmosphärische Lichter** | Scheinwerfer, flackernde Lampen, farbige Glühbirnen | Hoch (Beeinflusst Sicht und Spannung) | Nutze warmes Licht für Sicherheitszonen und kalte oder rote Töne für Gefahrenbereiche. |
+| **Sound-Emitter** | Umgebungssummen, Jumpscare-Effekte, entfernte Schritte | Mittel (Baut psychologischen Horror auf) | Platziere dezentes Rauschen nahe Schächten, um herannahende Gefahren zu verschleiern. |
+| **Thematische Deko-Packs** | Krankenhausbetten, Jahrmarktsbuden, Industrierohre | Gering (Rein ästhetisch) | Vermeide es, Gehwege zu überladen, damit Spieler nicht an Hitboxen hängen bleiben. |
+| **Individuelle NPC-Modelle** | Event-Skins, saisonale Monster, einzigartige Animatronics | Hoch (Verändert die visuelle Tonalität) | Passe das Verfolger-Modell an das narrative Thema deiner Map an. |
+
+Das Sammeln von Assets über saisonale Events und Shop-Updates ermöglicht es dir, Maps zu bauen, die in öffentlichen Serverlisten herausstechen. Das Experimentieren mit kontrastreichen Beleuchtungsstilen erzielt oft die größte visuelle Wirkung, ohne das Bauteile-Budget der Map zu überlasten.
+
+---
+
+## Best Practices für das Balancing benutzerdefinierter Escape-Maps
+
+Das Entwerfen einer herausragenden Map erfordert eine Balance zwischen Ästhetik und präzisem, fairem Gameplay. Wenn Creator das Playtesting vernachlässigen, leiden Level oft unter unfairen Fallen, verwirrenden Fortschrittsstrukturen oder gravierenden Einbrüchen der Server-Performance.
+
+### Checkliste für Map-Design und Optimierung
+
+Befolge diese strukturierte Entwicklungs-Checkliste, um sicherzustellen, dass dein Level auf allen Geräten – einschließlich Mobiltelefonen und schwächeren PCs – flüssig läuft:
+
+| Phase | Schwerpunktbereich | Prüfkriterien | Status |
+| :--- | :--- | :--- | :--- |
+| **Phase 1: Geometrie** | Layout & Sichtachsen | Sind Korridore mindestens 3 Studs breit, um Ausweichmanöver zu ermöglichen? | [ ] |
+| **Phase 2: Beleuchtung** | Performance & Stimmung | Sind Lichtquellen weit genug verteilt, um schwere Einbrüche der Framerate zu vermeiden? | [ ] |
+| **Phase 3: Logik** | Rätselablauf | Kann jede Tür mit den auf der Map verfügbaren Gegenständen geöffnet werden? | [ ] |
+| **Phase 4: Bot-Tests** | KI-Navigation | Bleibt der Verfolger an Requisiten, Treppen oder Türen hängen? | [ ] |
+| **Phase 5: Stresstest** | Multiplayer-Gameplay | Können mehrere Überlebende Aufgaben lösen, ohne dass Items durch die Geometrie clippen? | [ ] |
+
+### Erkenntnisse zur Spielerfahrung
+
+Basierend auf Community-Feedback aus geteilten Map-Vorstellungen teilen die beliebtesten von Nutzern erstellten Maps drei wesentliche Merkmale:
+
+1. **Klare visuelle Leitsprache:** Interaktive Objekte heben sich natürlich von der Hintergrunddekoration ab, ohne dass die Immersion durch grelle Neonschilder gestört wird.
+2. **Rundlaufende Pfade (Looping):** Sackgassen sind mit Versteck-Spinden, Lüftungsschächten oder Falltüren versehen, sodass Spieler nie ohne Ausweichmöglichkeit in eine ausweglose Ecke gedrängt werden.
+3. **Optimierte Objektanzahl:** Das Einschränken unbefestigter oder komplexer dekorativer Meshes hält die Ladezeiten kurz und minimiert Lags während Verfolgungsjagden.
+
+Die Anwendung dieser Prinzipien stellt sicher, dass sich deine Kreationen im Piggy Build-Modus professionell, lohnend und wiederspielbar anfühlen.
+
+---
+
+## Häufig gestellte Fragen (FAQ)
+
+### Wie hoch ist das Teilelimit im Piggy Build-Modus?
+Obwohl die Engine reichlich Platz für weitläufige Villen, Schulen und unterirdische Bunker bietet, gibt es ein übergeordnetes Asset- und Bauteile-Budget zur Gewährleistung der Serverstabilität. Erfahrungsberichte aus der Community raten dazu, deutlich unter dem Limit zu bleiben, da das Annähern an die Obergrenze auf Mobilgeräten zu spürbaren Latenzen und Rucklern bei der KI-Wegfindung führen kann.
+
+### Kann ich mehrere eigene Maps zu einer Kampagne verknüpfen?
+Eine direkte Verknüpfung von Maps zu einer nahtlosen mehrteiligen Kampagne innerhalb einer einzelnen Server-Instanz wird nativ nicht unterstützt. Creator entwerfen jedoch häufig mehrteilige Geschichten, indem sie separate Speicherstände veröffentlichen und diese nummerieren (z. B. „Facility: Teil 1“ und „Facility: Teil 2“), sodass Spieler nach der ersten Flucht den nächsten Speicherstand laden können.
+
+### Warum bleibt der NPC ständig an meinen Türen und Treppen hängen?
+Die Wegfindungsalgorithmen von NPCs benötigen saubere Kollisionsboxen. Wenn ein Türrahmen schmale Zierleisten aufweist oder Treppen keine glatten Keil-Kollisionsrampen darunter haben, kann das Navigations-Mesh des Bots versagen. Um dies zu beheben, vereinfache die Kollisionsgeometrie um Türöffnungen und ersetze komplexe Blocktreppen durch unsichtbare, glatte Rampen.
+
+### Wie kann ich meine Piggy Build-Modus-Maps speichern und mit Freunden teilen?
+Du kannst deinen aktuellen Fortschritt direkt über das In-Game-Systemmenü auf festgelegten Speicherplätzen sichern. Um dein Level mit anderen zu teilen, kannst du einen benutzerdefinierten Server hosten, Freunde zu deiner Bausitzung einladen oder deine Lobby im öffentlichen Server-Browser freigeben, damit andere Spieler beitreten, deine Map bewerten und versuchen können, ihr zu entkommen.

@@ -1,0 +1,147 @@
+export const metadata = {
+  title: "Guía del Modo Construcción de Piggy: Cómo Diseñar, Programar y Compartir Mapas Personalizados",
+  description: "Domina el Modo Construcción de Piggy con nuestra guía completa. Aprende diseño de mapas, activadores de eventos, navegación de PNJ y consejos para crear niveles de terror equilibrados.",
+  category: "modes",
+  date: "2026-09-21",
+};
+
+Ir más allá de los capítulos estándar de la exitosa experiencia de terror y supervivencia de MiniToon abre un reino completamente nuevo de libertad creativa. Dominar el **modo construcción de Piggy** te permite transformarte de un superviviente en fuga al arquitecto de tus propios laberintos escalofriantes y encuentros cinematográficos. Ya sea que quieras recrear acertijos clásicos de salas de escape o diseñar complejos desafíos de varias etapas, sumergirte en el **modo construcción de Piggy** te otorga un control total sobre el diseño del mapa, la distribución de objetos y el comportamiento de los enemigos.
+
+Para los aspirantes a creadores, comprender los matices del diseño personalizado marca la diferencia entre un mapa frustrante y propenso a bloqueos insuperables (soft-locks) y un éxito memorable de la comunidad. Esta guía desglosa todo, desde las mecánicas fundamentales de construcción hasta la lógica avanzada de activadores, la búsqueda de rutas de PNJ (NPC pathfinding) y la utilización de recursos de la tienda.
+
+---
+
+## Primeros Pasos con el Modo Construcción de Piggy: Mecánicas Básicas y Controles
+
+En su nivel más básico, construir un nivel personalizado requiere aprender la interfaz y los controles de ajuste a la cuadrícula (grid-snapping). Este entorno de construcción opera sobre un sistema de cuadrícula basado en bloques, diseñado para garantizar que las paredes, puertas y elementos interactivos se alineen a la perfección sin solapamientos (clipping).
+
+Al ingresar al editor a través del [centro del modo construcción de Piggy en Roblox](https://www.roblox.com/games/5252207880/Piggy-build-mode), los jugadores reciben una paleta de geometría básica, objetos interactivos y herramientas de eventos. Familiarizarse con los atajos de teclado y los incrementos de la cuadrícula acelera considerablemente tu flujo de trabajo.
+
+### Controles Esenciales de la Interfaz
+
+Desplazarse por el espacio 3D en el editor requiere diferentes controles de cámara y herramientas. A diferencia del juego estándar, la cámara del constructor puede volar libremente por el escenario, lo que te permite inspeccionar techos altos, redes de ventilación ocultas y túneles subterráneos.
+
+| Herramienta / Acción | Tecla / Entrada Predeterminada | Función | Aplicación Práctica |
+| :--- | :--- | :--- | :--- |
+| **Mover / Colocar** | Clic Izquierdo | Posiciona el bloque o entidad seleccionada | Colocar suelos, paredes y estructuras básicas |
+| **Rotar** | Teclas R / T | Rota el recurso seleccionado a lo largo de los ejes X/Y | Alinear puertas, esquinas y elementos decorativos diagonales |
+| **Eliminar** | Retroceso / Selección de herramienta | Elimina el elemento seleccionado del escenario | Corregir errores de construcción o rediseñar habitaciones |
+| **Ajuste de Cuadrícula (Grid Snap)** | Panel de Ajustes de la IU | Alterna entre 1 stud, 2 studs o colocación libre | Alineación precisa de objetos de puzles frente a detalles decorativos |
+| **Modo de Prueba** | Botón de Jugar en la Barra Superior | Carga el mapa en estado activo de superviviente/bot | Verificar distancias de salto y mecánicas de apertura de puertas |
+
+Comprender estas herramientas desde el principio evita hitboxes desalineadas. Los informes de los jugadores a menudo enfatizan que mantener activado el ajuste a la cuadrícula durante la estructura inicial evita microfisuras por las que los objetos podrían caer a través de la geometría.
+
+---
+
+## Componentes Esenciales del Mapa: Bloques, Puertas y Llaves
+
+Todo mapa cautivador se basa en un bucle de progresión intuitivo. En las mecánicas típicas de escape, los jugadores exploran habitaciones en busca de llaves, herramientas (como llaves inglesas, martillos y tablas de madera) y distracciones consumibles para superar pasajes bloqueados.
+
+Construir un diseño de puzles atractivo requiere equilibrar la ubicación de los objetos con las rutas de patrulla de los monstruos. Si una llave es demasiado fácil de encontrar, la tensión desaparece; si está escondida en un rincón oscuro sin pistas visuales, los jugadores se frustran.
+
+### Desglose de Componentes Interactivos
+
+La paleta principal incluye varios elementos estructurales y mecánicos que determinan cómo los jugadores recorren tu nivel personalizado.
+
+| Componente | Categoría | Propósito | Mejor Práctica de Diseño |
+| :--- | :--- | :--- | :--- |
+| **Pared / Suelo Básico** | Estructural | Define límites, habitaciones y pasillos | Varía las texturas (ladrillo, madera, metal) para dar identidad a cada sala. |
+| **Puerta con Llave** | Interactivo | Bloquea el paso hasta que se use la llave correspondiente | Usa códigos de color en la iluminación cercana o en el marco para insinuar la llave requerida. |
+| **Barrera con Tablas** | Interactivo | Requiere un martillo para quitar las tablas | Colócala en cuellos de botella para generar tensión sonora mientras se despeja. |
+| **Conductos de Ventilación** | Desplazamiento | Rutas alternativas para jugadores agachados | Asegúrate de que los bots no puedan entrar o tengan rutas alternativas de desvío. |
+| **Generador de Objetos (Item Spawner)** | Lógica / Jugabilidad | Genera llaves, combustible, engranajes o armas | Distribuye los generadores de manera uniforme; evita agrupar herramientas clave en una sola zona. |
+
+Al colocar puertas cerradas y objetos en el modo construcción de Piggy, traza siempre un árbol de dependencias claro. Por ejemplo, la llave azul debería abrir un área que contenga la llave inglesa o una pista hacia la llave naranja, evitando así callejones sin salida.
+
+---
+
+## Diseño de Niveles Avanzado: Vinculación de Eventos, Activadores y PNJ
+
+Un mapa estático con puertas simples puede volverse predecible con rapidez. Los creadores avanzados utilizan mecánicas de activación, bloques de enlace y encuentros personalizados con PNJ para inyectar tensión narrativa y secuencias programadas en sus creaciones.
+
+Los activadores (triggers) te permiten generar cambios ambientales según las acciones de los supervivientes. Por ejemplo, pisar una placa de presión oculta puede cerrar puertas de seguridad, hacer sonar una alarma o hacer aparecer a un perseguidor hostil en el sector.
+
+### Configuración de la IA y Aparición de Monstruos
+
+El comportamiento de los PNJ en niveles personalizados se basa en la navegación por nodos o en el seguimiento por línea de visión directa. Elegir el tipo de bot adecuado y configurar sus activadores de aparición determina cuán agresiva se sentirá la amenaza.
+
+| Tipo de PNJ / IA | Velocidad de Movimiento | Habilidad Especial | Estilo de Mapa Recomendado |
+| :--- | :--- | :--- | :--- |
+| **Infectado Estándar** | Media (Igual a la velocidad al caminar) | Persecución directa con línea de visión | Mapas de exploración equilibrados con varias habitaciones |
+| **Rastreador / Acechador de Conductos** | Rápido en espacios reducidos | Puede atravesar pasajes de baja altura | Mapas complejos con redes de conductos intrincadas |
+| **Bot de Patrulla** | Ruta Fija | Sigue puntos de ruta (waypoints) designados | Niveles centrados en el sigilo con escondites claros |
+| **Jefe con Aspecto Personalizado** | Variable / Programado | Emite sonidos de advertencia o aura de proximidad | Secuencias de escape final o escenas cinematográficas |
+
+Los informes de la comunidad destacan que colocar los puntos de aparición de los bots justo al lado de los de los supervivientes es uno de los errores de principiante más comunes. Proporciona siempre a los supervivientes al menos entre 15 y 20 segundos de exploración libre antes de introducir un peligro físico inmediato.
+
+```
+[Zona de Aparición] ---> [Zona Segura Inicial] ---> [Primera Puerta de Puzle]
+                                                                 |
+                                                                 v
+                                               [Activador de Liberación del Infectado]
+```
+
+Al colocar el activador detrás del primer puzle completado, te aseguras de que todos los jugadores comprendan las mecánicas básicas antes de que aumente la presión de supervivencia.
+
+---
+
+## La Tienda del Modo Construcción y el Desbloqueo de Recursos Personalizados
+
+La profundidad de tus opciones creativas se amplía drásticamente a través de la tienda del juego. La Tienda del Modo Construcción permite a los creadores adquirir paquetes estructurales especializados, elementos de iluminación atmosférica, decoraciones de temporada y aspectos personalizados de PNJ utilizando fichas ganadas o recompensas de eventos.
+
+Invertir en estos recursos eleva un mapa funcional a una experiencia atmosférica y profundamente inmersiva.
+
+### Categorías Populares de Recursos en la Tienda del Modo Construcción
+
+| Categoría | Elementos Típicos | Impacto en el Juego | Consejo Creativo |
+| :--- | :--- | :--- | :--- |
+| **Luces Atmosféricas** | Focos, lámparas parpadeantes, bombillas de colores | Alto (Afecta la visibilidad y la tensión) | Usa luces cálidas para zonas seguras y tonos fríos o rojos para áreas de peligro. |
+| **Emisores de Sonido** | Zumbidos ambientales, sobresaltos sonoros (stingers), pasos distantes | Medio (Genera tensión psicológica) | Coloca ruido blanco sutil cerca de los conductos para camuflar amenazas que se aproximan. |
+| **Paquetes de Objetos Temáticos** | Camas de hospital, puestos de feria, tuberías industriales | Bajo (Puramente estético) | Evita sobrecargar los pasillos para impedir que los jugadores se queden atascados en las hitboxes. |
+| **Modelos de PNJ Personalizados** | Aspectos de eventos, monstruos de temporada, animatrónicos únicos | Alto (Modifica el tono visual) | Haz que el modelo del perseguidor coincida con el tema narrativo de tu mapa. |
+
+Adquirir recursos a través de eventos de temporada y actualizaciones de la tienda te permite construir mapas que destaquen en la lista pública de servidores. Experimentar con estilos de iluminación contrastantes a menudo genera el mayor impacto visual sin sobrecargar el límite de piezas del mapa.
+
+---
+
+## Buenas Prácticas para Equilibrar Mapas de Escape Personalizados
+
+Diseñar un mapa excepcional requiere equilibrar la estética con una jugabilidad justa y ajustada. Cuando los creadores descuidan las pruebas de juego, los niveles a menudo sufren de trampas injustas, bucles de progresión confusos o caídas graves en el rendimiento del servidor.
+
+### Lista de Verificación de Diseño y Optimización del Mapa
+
+Para asegurarte de que tu nivel funcione de manera fluida en todos los dispositivos (incluidos teléfonos móviles y PC de gama baja), sigue esta lista de verificación de desarrollo estructurada:
+
+| Fase | Área de Enfoque | Criterio de Verificación | Estado |
+| :--- | :--- | :--- | :--- |
+| **Fase 1: Geometría** | Distribución y Líneas de Visión | ¿Tienen los pasillos al menos 3 studs de ancho para permitir maniobras de evasión? | [ ] |
+| **Fase 2: Iluminación** | Rendimiento y Ambiente | ¿Están las fuentes de luz espaciadas para evitar caídas graves en la tasa de cuadros (FPS)? | [ ] |
+| **Fase 3: Lógica** | Flujo de Puzles | ¿Se puede abrir cada puerta con los objetos disponibles en el mapa? | [ ] |
+| **Fase 4: Pruebas de Bots** | Navegación de IA | ¿Se queda atascado el perseguidor en elementos decorativos, escaleras o puertas? | [ ] |
+| **Fase 5: Prueba de Estrés** | Juego Multijugador | ¿Pueden varios supervivientes completar tareas sin que los objetos atraviesen el suelo (clipping)? | [ ] |
+
+### Perspectivas de la Experiencia del Jugador
+
+Según los comentarios de la comunidad recopilados en exhibiciones de mapas compartidos, los mapas creados por usuarios más populares comparten tres rasgos distintivos:
+
+1. **Lenguaje Ambiental Claro:** Los objetos interactivos destacan de forma natural sobre la decoración de fondo sin necesidad de recurrir a letreros de neón que rompan la inmersión.
+2. **Rutas en Bucle:** Los callejones sin salida se combinan con armarios para esconderse, conductos de ventilación o rampas de caída, de modo que los jugadores nunca queden acorralados sin opciones de contrajuego.
+3. **Recuento Optimizado de Piezas:** Limitar las mallas decorativas complejas o no ancladas mantiene tiempos de carga rápidos y minimiza la latencia durante las secuencias de persecución.
+
+Aplicar estos principios garantiza que tus creaciones en el modo construcción de Piggy se sientan profesionales, gratificantes y emocionantes de volver a jugar.
+
+---
+
+## Preguntas Frecuentes (FAQ)
+
+### ¿Cuál es el límite de piezas en el Modo Construcción de Piggy?
+Aunque el motor ofrece un amplio espacio para elaborar mansiones, escuelas y búnkeres subterráneos, existe un presupuesto global de recursos y piezas para garantizar la estabilidad del servidor. Los informes de la comunidad sugieren mantenerse bastante por debajo del límite estricto, ya que acercarse al número máximo de piezas puede causar una latencia notable y problemas en la navegación de la IA en dispositivos móviles.
+
+### ¿Puedo vincular varios mapas personalizados para formar una campaña?
+La vinculación directa de mapas en una campaña continua de varios capítulos dentro de una sola instancia de servidor no es compatible de forma nativa. Sin embargo, los creadores suelen diseñar historias divididas en varias partes publicando archivos de guardado independientes y numerándolos (por ejemplo, «Instalación: Parte 1» e «Instalación: Parte 2»), indicando a los jugadores que carguen el siguiente archivo tras completar la fuga inicial.
+
+### ¿Por qué el PNJ se queda atascado continuamente en mis puertas y escaleras?
+Los algoritmos de navegación de los PNJ requieren cajas de colisión despejadas. Si el marco de una puerta tiene molduras decorativas estrechas o si las escaleras carecen de rampas de colisión suaves debajo, la malla de navegación del bot puede fallar. Para solucionar esto, simplifica la geometría de colisión alrededor de las puertas y sustituye las escaleras de bloques complejas por rampas invisibles y suaves.
+
+### ¿Cómo guardo y comparto mis mapas del Modo Construcción de Piggy con amigos?
+Puedes guardar tu trabajo actual directamente a través del menú del sistema del juego utilizando las ranuras de guardado designadas. Para compartir tu nivel con otros, puedes alojar un servidor personalizado, invitar a amigos a tu sesión de construcción o abrir tu sala al navegador público de servidores para que otros jugadores puedan unirse, calificar e intentar escapar de tu creación.

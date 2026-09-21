@@ -8,6 +8,13 @@
   },
   "nav": {
     "home": "Home",
+    "guide": "Guide",
+    "characters": "Characters",
+    "maps": "Maps",
+    "modes": "Modes",
+    "items": "Items",
+    "progression": "Progression",
+    "community": "Community",
     "menu": "Menu",
     "toggleTheme": "Toggle theme"
   },
@@ -361,7 +368,6 @@
       "secondary": "Play on Roblox"
     }
   },
-  "bosses": {},
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -397,5 +403,33 @@
     "buildGuide": "Escape Guide",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "guide": {
+    "overviewTitle": "Piggy Guides & Walkthroughs",
+    "overviewDescription": "Master every chapter, puzzle, and escape sequence in Roblox Piggy with step-by-step walkthroughs and survival strategies."
+  },
+  "characters": {
+    "overviewTitle": "Piggy Characters & Skins",
+    "overviewDescription": "Explore full character bios, friendly survivor companions, enemy infected monsters, and unlockable skins in Piggy."
+  },
+  "maps": {
+    "overviewTitle": "Piggy Maps & Chapter Locations",
+    "overviewDescription": "Navigate every map across Book 1 and Book 2 with complete layouts, item spawn points, and escape routes."
+  },
+  "modes": {
+    "overviewTitle": "Piggy Game Modes & Custom Play",
+    "overviewDescription": "Discover all gameplay variations including Traitor, Infection, Swarm, Build Mode, and custom community experiences."
+  },
+  "items": {
+    "overviewTitle": "Piggy Items, Keys & Tools",
+    "overviewDescription": "Comprehensive database of all keys, tools, weapons, power cells, and quest items needed to escape each chapter."
+  },
+  "progression": {
+    "overviewTitle": "Piggy Updates, Quests & Progression",
+    "overviewDescription": "Track the evolution of Piggy with update logs, upcoming content teasers, season rewards, and Intercity news."
+  },
+  "community": {
+    "overviewTitle": "Piggy Lore, Community & Media",
+    "overviewDescription": "Delve into Piggy lore theories, soundtrack highlights, creator tier lists, and official community channels."
   }
 }

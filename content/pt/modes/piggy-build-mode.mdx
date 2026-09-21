@@ -1,0 +1,147 @@
+export const metadata = {
+  title: "Guia do Piggy Build Mode: Como Projetar, Criar Scripts e Compartilhar Mapas Personalizados",
+  description: "Domine o Piggy Build Mode com nosso guia completo. Aprenda design de mapas, gatilhos de eventos, pathfinding de NPCs e dicas para criar fases de terror personalizadas e equilibradas.",
+  category: "modes",
+  date: "2026-09-21",
+};
+
+Ir além dos capítulos padrão do famoso jogo de sobrevivência e terror de MiniToon abre um reino totalmente novo de liberdade criativa. Dominar o **piggy build mode** permite que você deixe de ser um sobrevivente em fuga para se tornar o arquiteto de seus próprios labirintos aterrorizantes e confrontos cinematográficos. Quer você queira recriar enigmas clássicos de escape room ou criar desafios complexos em várias etapas, mergulhar no **piggy build mode** oferece controle total sobre o layout do mapa, a distribuição de itens e o comportamento dos inimigos.
+
+Para criadores em ascensão, entender as nuances do design personalizado é a diferença entre um mapa frustrante e propenso a travamentos (soft-locks) e um sucesso memorável na comunidade. Este guia detalha tudo, desde as mecânicas fundamentais de construção até a lógica avançada de gatilhos (triggers), pathfinding de NPCs e o uso de recursos da loja.
+
+---
+
+## Primeiros Passos no Piggy Build Mode: Mecânicas Principais e Controles
+
+Em sua essência, construir uma fase personalizada exige aprender a interface e os controles de alinhamento à grade (grid-snapping). O sandbox de construção opera em um sistema de grade baseado em blocos, projetado para garantir que paredes, portas e elementos interativos se alinhem perfeitamente sem sobreposições visuais indesejadas (clipping).
+
+Ao entrar no editor pelo [Piggy build mode hub no Roblox](https://www.roblox.com/games/5252207880/Piggy-build-mode), os jogadores recebem uma paleta de formas geométricas básicas, itens interativos e ferramentas de eventos. Familiarizar-se com os atalhos de teclado e os incrementos de grade acelerará significativamente seu fluxo de trabalho.
+
+### Controles Essenciais da Interface
+
+Navegar pelo espaço 3D no editor exige alternar controles específicos de câmera e ferramentas. Diferente da jogabilidade padrão, a câmera de construção pode voar livremente pelo cenário, permitindo inspecionar tetos altos, redes ocultas de ventilação e túneis subterrâneos.
+
+| Ferramenta / Ação | Tecla / Comando Padrão | Função | Aplicação Prática |
+| :--- | :--- | :--- | :--- |
+| **Mover / Posicionar** | Clique Esquerdo | Posiciona o bloco ou entidade selecionada | Construção de pisos, paredes e estruturas básicas |
+| **Girar** | Teclas R / T | Gira o item selecionado ao longo dos eixos X/Y | Alinhamento de portas, peças de canto e objetos diagonais |
+| **Excluir** | Backspace / Seleção de Ferramenta | Remove o item destacado do cenário | Correção de erros de construção ou reformulação de cômodos |
+| **Alternar Grade (Snap)** | Painel de Configurações da UI | Alterna entre 1 stud, 2 studs ou posicionamento livre | Alinhamento preciso de itens de enigma vs. detalhes decorativos |
+| **Modo de Teste** | Botão Play na Barra Superior | Carrega o mapa em estado ativo de sobrevivente/bot | Verificação de distâncias de pulo e mecânicas de abertura de portas |
+
+Compreender essas ferramentas logo no início evita hitboxes desalinhadas. Relatos da comunidade enfatizam com frequência que manter o alinhamento à grade ativado durante a estrutura principal evita microfrestas por onde os itens podem cair através da geometria.
+
+---
+
+## Componentes Essenciais do Mapa: Blocos, Portas e Chaves
+
+Todo mapa envolvente depende de um ciclo de progressão intuitivo. Nas mecânicas clássicas de fuga, os jogadores vasculham salas em busca de chaves, ferramentas (como chaves inglesas, martelos e tábuas) e distrações consumíveis para contornar passagens trancadas.
+
+Criar um design de enigmas atraente exige equilibrar a localização dos itens com as rotas de patrulha dos monstros. Se uma chave for fácil demais de achar, a tensão se perde; se estiver escondida em um canto obscuro sem pistas visuais, os jogadores ficarão frustrados.
+
+### Detalhamento dos Componentes Interativos
+
+A paleta principal conta com diversos itens estruturais e mecânicos que determinam como os jogadores exploram sua fase personalizada.
+
+| Componente | Categoria | Finalidade | Melhor Prática de Design |
+| :--- | :--- | :--- | :--- |
+| **Parede / Piso Básico** | Estrutural | Define limites, salas e corredores | Varie texturas (tijolo, madeira, metal) para dar identidade a cada ambiente. |
+| **Porta com Chave** | Interativo | Bloqueia a passagem até que a chave correspondente seja usada | Use cores nas luzes ou molduras próximas para indicar a chave necessária. |
+| **Barreira com Tábuas** | Interativo | Exige um martelo para remover as tábuas | Posicione em pontos de afunilamento para gerar tensão sonora durante a remoção. |
+| **Dutos de Ventilação** | Travessia | Rotas alternativas para jogadores agachados | Garanta que o bot não consiga entrar ou tenha caminhos alternativos de desvio. |
+| **Gerador de Itens (Spawner)** | Lógica / Jogabilidade | Gera chaves, combustível, engrenagens ou armas | Distribua os geradores de forma uniforme; evite concentrar itens essenciais em uma única área. |
+
+Ao posicionar portões trancados e itens no piggy build mode, sempre planeje uma árvore de dependências clara. Por exemplo, a chave azul deve desbloquear uma área que contenha a chave inglesa ou uma pista para a chave laranja, evitando becos sem saída frustrantes.
+
+---
+
+## Design de Fases Avançado: Conectando Eventos, Gatilhos e NPCs
+
+Um mapa estático com portas simples pode se tornar previsível rapidamente. Criadores avançados utilizam mecânicas de gatilhos (triggers), blocos de ligação e encontros personalizados com NPCs para introduzir tensão narrativa e sequências roteirizadas em suas criações.
+
+Os gatilhos permitem ativar mudanças no cenário com base nas ações dos sobreviventes. Por exemplo, pisar em uma placa de pressão oculta pode fechar portões de segurança, soar um alarme ou invocar um perseguidor hostil no setor.
+
+### Configurando a IA e o Surgimento de Monstros
+
+O comportamento dos NPCs em fases personalizadas depende de navegação por nós (node-based pathfinding) ou rastreamento por linha de visão direta. Escolher o tipo certo de bot e configurar seus gatilhos de surgimento determina o quão agressiva será a ameaça.
+
+| Tipo de NPC / IA | Velocidade de Movimento | Habilidade Especial | Estilo de Mapa Recomendado |
+| :--- | :--- | :--- | :--- |
+| **Infectado Padrão** | Média (Igual à velocidade de caminhada) | Perseguição direta ao avistar | Mapas equilibrados de exploração com várias salas |
+| **Rastejador / Vent Stalker** | Rápido em espaços apertados | Consegue atravessar passagens baixas | Mapas complexos com redes intricadas de ventilação |
+| **Bot de Patrulha** | Rota Fixa | Segue marcadores de rota (waypoints) definidos | Fases focadas em furtividade com esconderijos claros |
+| **Chefe com Skin Personalizada** | Variável / Roteirizada | Emite sons de aviso ou aura de proximidade | Sequências finais de fuga ou momentos cinematográficos |
+
+Relatos da comunidade destacam que posicionar o surgimento do bot logo ao lado do ponto de início dos sobreviventes é um dos erros mais comuns de iniciantes. Sempre dê aos sobreviventes pelo menos de 15 a 20 segundos de exploração livre antes de apresentar qualquer perigo físico imediato.
+
+```
+[Zona de Spawn] ---> [Área Segura Inicial] ---> [Primeiro Portão de Enigma]
+                                                                 |
+                                                                 v
+                                                   [Gatilho de Liberação do Infectado]
+```
+
+Ao posicionar o gatilho atrás do primeiro enigma concluído, você garante que todos os jogadores compreendam as mecânicas básicas antes que a pressão de sobrevivência aumente.
+
+---
+
+## A Loja do Build Mode e o Desbloqueio de Recursos Personalizados
+
+A variedade de opções criativas se expande consideravelmente por meio da loja do jogo. A Loja do Build Mode permite que os criadores comprem pacotes estruturais especializados, elementos de iluminação atmosférica, decorações sazonais e skins personalizadas de NPCs usando tokens ganhos ou recompensas de eventos.
+
+Investir nesses itens transforma um mapa puramente funcional em uma experiência atmosférica e altamente imersiva.
+
+### Categorias de Itens Populares na Loja do Build Mode
+
+| Categoria | Itens Comuns | Impacto na Jogabilidade | Dica Criativa |
+| :--- | :--- | :--- | :--- |
+| **Luzes Atmosféricas** | Refletores, lâmpadas piscantes, lâmpadas coloridas | Alto (Afeta visibilidade e tensão) | Use luzes quentes para áreas seguras e tons frios ou vermelhos para zonas de perigo. |
+| **Emissores de Som** | Ruídos ambientes, sons de susto (jump-scare), passos distantes | Médio (Gera tensão psicológica) | Posicione ruídos sutis perto de dutos para disfarçar ameaças que se aproximam. |
+| **Pacotes de Objetos Temáticos** | Camas de hospital, barracas de parque, canos industriais | Baixo (Puramente estético) | Evite poluir demais os corredores para impedir que os jogadores fiquem presos em hitboxes. |
+| **Modelos de NPC Personalizados** | Skins de eventos, monstros sazonais, animatrônicos exclusivos | Alto (Altera o tom visual) | Combine o modelo do perseguidor com o tema narrativo do seu mapa. |
+
+Adquirir recursos em eventos de temporada e atualizações da loja permite criar mapas que se destacam na lista pública de servidores. Experimentar estilos de iluminação contrastantes costuma gerar o maior impacto visual sem sobrecarregar o limite de peças do mapa.
+
+---
+
+## Melhores Práticas para Equilibrar Mapas de Fuga Personalizados
+
+Criar um mapa excepcional exige equilibrar estética com uma jogabilidade justa e bem ajustada. Quando os criadores ignoram os testes de jogo (playtesting), as fases costumam sofrer com armadilhas injustas, progressões confusas ou quedas severas no desempenho do servidor.
+
+### Checklist de Design e Otimização do Mapa
+
+Para garantir que sua fase funcione perfeitamente em todos os dispositivos — incluindo celulares e PCs mais modestos —, siga este checklist estruturado de desenvolvimento:
+
+| Fase | Área de Foco | Critério de Verificação | Status |
+| :--- | :--- | :--- | :--- |
+| **Fase 1: Geometria** | Layout e Linhas de Visão | Os corredores têm pelo menos 3 studs de largura para permitir manobras de esquiva? | [ ] |
+| **Fase 2: Iluminação** | Desempenho e Clima | As fontes de luz estão espaçadas para evitar quedas bruscas de taxa de quadros (FPS)? | [ ] |
+| **Fase 3: Lógica** | Fluxo de Enigmas | Todas as portas podem ser abertas com os itens disponíveis no mapa? | [ ] |
+| **Fase 4: Teste de Bots** | Navegação da IA | O perseguidor fica preso em objetos decorativos, escadas ou portas? | [ ] |
+| **Fase 5: Teste de Carga** | Partida Multijogador | Vários sobreviventes conseguem realizar tarefas sem problemas de itens sumindo ou atravessando paredes? | [ ] |
+
+### Percepções sobre a Experiência do Jogador
+
+Com base no feedback da comunidade reunido em apresentações de mapas compartilhados, as criações mais populares feitas por usuários compartilham três características essenciais:
+
+1. **Linguagem Visual Clara:** Objetos interativos se destacam naturalmente da decoração de fundo sem a necessidade de placas luminosas exageradas que quebram a imersão.
+2. **Caminhos em Loop:** Becos sem saída contam com armários para se esconder, dutos ou passagens de queda rápida, garantindo que os jogadores nunca fiquem encurralados sem chances de reação.
+3. **Contagem de Peças Otimizada:** Limitar malhas decorativas complexas ou peças soltas mantém o tempo de carregamento ágil e minimiza a latência durante perseguições intensas.
+
+Aplicar esses princípios garante que suas criações no piggy build mode pareçam profissionais, recompensadoras e empolgantes de jogar novamente.
+
+---
+
+## Perguntas Frequentes (FAQ)
+
+### Qual é o limite de peças no Piggy Build Mode?
+Embora o motor ofereça bastante espaço para mansões elaboradas, escolas e bunkers subterrâneos, existe um limite geral de peças e recursos para garantir a estabilidade do servidor. Relatos da comunidade sugerem ficar bem abaixo do limite máximo, pois se aproximar desse teto pode causar lentidão perceptível e travamentos no pathfinding da IA em dispositivos móveis.
+
+### Posso conectar vários mapas personalizados em uma campanha?
+A conexão direta de mapas em uma campanha contínua com vários capítulos em uma única instância de servidor não é suportada nativamente. No entanto, os criadores costumam desenvolver histórias em várias partes publicando arquivos de salvamento separados e numerando-os (por exemplo, "Instalação: Parte 1" e "Instalação: Parte 2"), orientando os jogadores a carregar o próximo arquivo após concluírem a fuga inicial.
+
+### Por que o NPC continua ficando preso nas minhas portas e escadas?
+Os algoritmos de pathfinding dos NPCs exigem caixas de colisão limpas. Se o vão de uma porta tiver molduras decorativas estreitas ou se as escadas não tiverem rampas de colisão suaves (wedges) por baixo, a malha de navegação do bot pode falhar. Para corrigir isso, simplifique a geometria de colisão ao redor das portas e substitua escadas de blocos complexas por rampas invisíveis e suaves.
+
+### Como salvar e compartilhar meus mapas do Piggy Build Mode com amigos?
+Você pode salvar seu progresso diretamente pelo menu do sistema do jogo usando os slots de salvamento disponíveis. Para compartilhar sua fase com outras pessoas, você pode hospedar um servidor personalizado, convidar amigos para a sua sessão de construção ou abrir seu lobby na lista pública de servidores para que outros jogadores possam entrar, avaliar e tentar escapar da sua criação.

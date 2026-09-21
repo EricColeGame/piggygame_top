@@ -1,0 +1,147 @@
+export const metadata = {
+  title: "Piggy Build Mode Guide: How to Design, Script, and Share Custom Maps",
+  description: "Master Piggy Build Mode with our complete guide. Learn map design, event triggers, NPC pathfinding, and tips to create balanced custom horror levels.",
+  category: "modes",
+  date: "2026-09-21",
+};
+
+Stepping beyond the standard chapters of MiniToon's hit survival-horror experience opens up an entirely new realm of creative freedom. Mastering **piggy build mode** allows you to transform from an escaping survivor into the architect of your own chilling labyrinths and cinematic encounters. Whether you want to recreate classic escape-room puzzles or craft complex multi-stage gauntlets, diving into **piggy build mode** gives you full control over map layout, item distribution, and enemy behaviors.
+
+For aspiring creators, understanding the nuance of custom design is the difference between a frustrating, soft-lock-prone map and a memorable community hit. This guide breaks down everything from fundamental building mechanics to advanced trigger logic, NPC pathfinding, and shop asset utilization.
+
+---
+
+## Getting Started with Piggy Build Mode: Core Mechanics and Controls
+
+At its foundation, building a custom level requires learning the interface and grid-snapping controls. The building sandbox operates on a block-based grid system designed to ensure walls, doors, and interactive fixtures align smoothly without clipping.
+
+When entering the editor via the [Piggy build mode hub on Roblox](https://www.roblox.com/games/5252207880/Piggy-build-mode), players receive a palette of basic geometry, interactive items, and event tools. Familiarizing yourself with hotkeys and grid increments speeds up your workflow significantly.
+
+### Essential Interface Controls
+
+Navigating 3D space in the editor requires distinct camera and tool toggles. Unlike standard play, the builder camera can fly freely across the canvas, allowing you to inspect high ceilings, hidden vent networks, and subterranean tunnels.
+
+| Tool / Action | Default Key / Input | Function | Practical Application |
+| :--- | :--- | :--- | :--- |
+| **Move / Place** | Left Click | Positions the selected block or entity | Laying down basic floors, walls, and structures |
+| **Rotate** | R / T Keys | Rotates selected asset along X/Y axes | Aligning doorways, corner pieces, and diagonal props |
+| **Delete** | Backspace / Tool Select | Removes highlighted asset from canvas | Clearing build errors or reworking room layouts |
+| **Grid Snap Toggle** | UI Settings Panel | Toggles 1-stud, 2-stud, or freeform placement | Precision alignment of puzzle props vs. decorative clutter |
+| **Test Mode** | Top Bar Play Button | Loads map into active survivor/bot state | Verifying jump distances and door unlock mechanics |
+
+Understanding these tools early prevents misaligned hitboxes. Player reports often emphasize that keeping grid-snapping enabled during structural framing prevents micro-gaps where items can fall through geometry.
+
+---
+
+## Essential Map Components: Blocks, Doors, and Keys
+
+Every compelling map relies on an intuitive progression loop. In typical escape mechanics, players scour rooms for keys, tools (such as wrenches, hammers, and planks), and consumable distractions to bypass locked passages.
+
+Building an engaging puzzle layout requires balancing item placement against monster patrol paths. If a key is too easy to locate, the tension dissolves; if it is hidden in an obscure cranny without visual cues, players grow frustrated.
+
+### Interactive Components Breakdown
+
+The core palette features several structural and mechanical items that govern how players navigate your custom stage.
+
+| Component | Category | Purpose | Best Design Practice |
+| :--- | :--- | :--- | :--- |
+| **Basic Wall / Floor** | Structural | Defines boundaries, rooms, and corridors | Vary textures (brick, wood, metal) to give each room identity. |
+| **Key Door** | Interactive | Blocks passage until matched key is used | Color-code nearby lighting or trim to hint at key requirements. |
+| **Boarded Barrier** | Interactive | Requires a hammer to clear planks | Place at bottlenecks to create audible tension while clearing. |
+| **Vents & Ducts** | Traversal | Alternate routes for crouching players | Ensure bot pathing cannot enter or has alternate detour paths. |
+| **Item Spawner** | Logic / Gameplay | Generates keys, fuel, gears, or weapons | Disperse spawners evenly; avoid clustering primary tools in one zone. |
+
+When placing locked gates and items in piggy build mode, always map out a clear dependency tree. For example, the blue key should unlock an area containing either the wrench or a hint toward the orange key, preventing dead ends.
+
+---
+
+## Advanced Level Design: Linking Events, Triggers, and NPCs
+
+A static map with simple doors can quickly become predictable. Advanced creators utilize trigger mechanics, linking blocks, and custom NPC encounters to inject narrative tension and scripted sequences into their builds.
+
+Triggers allow you to activate environmental changes based on survivor actions. For instance, stepping on a hidden pressure pad can close security gates, sound an alarm, or spawn a hostile chaser into the sector.
+
+### Configuring AI and Monster Spawns
+
+NPC behavior in custom levels relies on node-based pathfinding or direct line-of-sight tracking. Selecting the right bot type and configuring its spawn triggers determines how aggressive the threat feels.
+
+| NPC / AI Type | Movement Speed | Special Ability | Recommended Map Style |
+| :--- | :--- | :--- | :--- |
+| **Standard Infected** | Medium (Matches walk speed) | Direct pursuit upon line of sight | Balanced, multi-room exploration maps |
+| **Crawler / Vent Stalker**| Fast in tight spaces | Can traverse low-clearance passages | Complex maps featuring intricate duct networks |
+| **Patrol Bot** | Fixed Route | Follows designated waypoint markers | Stealth-focused stages with clear hiding spots |
+| **Custom Skin Boss** | Variable / Scripted | Emits warning sounds or proximity aura | Final escape sequences or cinematic set pieces |
+
+Community reports highlight that placing bot spawns directly adjacent to survivor spawns is one of the most common rookie mistakes. Always provide survivors with at least 15 to 20 seconds of uninhibited exploration before introducing immediate physical danger.
+
+```
+[Spawn Zone] ---> [Initial Safe Hub] ---> [First Puzzle Gate]
+                                                 |
+                                                 v
+                                    [Infected Release Trigger]
+```
+
+By placing the trigger behind the first completed puzzle, you ensure every player understands the basic mechanics before survival pressure escalates.
+
+---
+
+## The Build Mode Shop and Unlocking Custom Assets
+
+The depth of your creative options expands drastically through the in-game store. The Build Mode Shop allows creators to purchase specialized structural packs, atmospheric lighting elements, seasonal decor, and custom NPC skins using earned tokens or event rewards.
+
+Investing in these assets elevates a functional map into an atmospheric, highly immersive experience.
+
+### Popular Asset Categories in the Build Mode Shop
+
+| Category | Typical Inclusions | Gameplay Impact | Creative Tip |
+| :--- | :--- | :--- | :--- |
+| **Atmospheric Lights** | Spotlights, flickering lamps, colored bulbs | High (Affects visibility and tension) | Use warm lights for safe zones and cold or red tones for hazard areas. |
+| **Sound Emitters** | Ambient hums, jump-scare stingers, distant footsteps | Medium (Builds psychological dread) | Place subtle white noise near vents to mask approaching threats. |
+| **Themed Prop Packs** | Hospital beds, carnival booths, industrial pipes | Low (Purely aesthetic) | Avoid over-cluttering walkways to prevent players getting caught on hitboxes. |
+| **Custom NPC Models** | Event skins, seasonal monsters, unique animatronics | High (Alters visual tone) | Match the chaser model to your map's narrative theme. |
+
+Acquiring assets through seasonal events and shop updates allows you to build maps that stand out in public server browser lists. Experimenting with contrasting lighting styles often yields the highest visual impact without straining map part budgets.
+
+---
+
+## Best Practices for Balancing Custom Escape Maps
+
+Designing an exceptional map requires balancing aesthetics with tight, fair gameplay. When creators neglect playtesting, levels often suffer from unfair trap placements, confusing progression loops, or severe server performance drops.
+
+### Map Design and Optimization Checklist
+
+To ensure your level runs smoothly on all devices—including mobile phones and lower-end PCs—follow this structured development checklist:
+
+| Phase | Focus Area | Verification Criteria | Status |
+| :--- | :--- | :--- | :--- |
+| **Phase 1: Geometry** | Layout & Sightlines | Are corridors at least 3 studs wide to allow evasive maneuvers? | [ ] |
+| **Phase 2: Lighting** | Performance & Mood | Are light sources spaced out to avoid severe frame-rate drops? | [ ] |
+| **Phase 3: Logic** | Puzzle Flow | Can every door be opened with items available on the map? | [ ] |
+| **Phase 4: Bot Testing** | AI Navigation | Does the chaser get stuck on decorative props, stairs, or doors? | [ ] |
+| **Phase 5: Stress Test** | Multiplayer Play | Can multiple survivors complete tasks without item clipping issues? | [ ] |
+
+### Player Experience Insights
+
+Based on community feedback gathered from shared map showcases, the most popular user-created maps share three distinct traits:
+
+1. **Clear Environmental Language:** Interactive objects stand out naturally from background decor without requiring immersion-breaking neon signs.
+2. **Looping Pathways:** Dead ends are paired with hiding lockers, vents, or drop-down chutes so players are never backed into an inescapable corner without counterplay.
+3. **Optimized Part Counts:** Limiting unanchored or complex decorative meshes keeps loading times snappy and minimizes latency during chase sequences.
+
+Applying these principles ensures that your piggy build mode creations feel professional, rewarding, and exciting to replay.
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+### What is the part limit in Piggy Build Mode?
+While the engine provides ample space for elaborate mansions, schools, and subterranean bunkers, there is an overarching asset and part budget to ensure server stability. Community reports suggest staying well below the hard cap, as approaching the maximum part limit can cause noticeable latency and AI pathfinding stutter on mobile devices.
+
+### Can I link multiple custom maps together into a campaign?
+Direct map linking into a seamless multi-chapter campaign within a single server instance is not natively supported. However, creators frequently design multi-part stories by publishing separate save files and numbering them (e.g., "Facility: Part 1" and "Facility: Part 2"), prompting players to load the next file upon completing the initial escape.
+
+### Why does the NPC keep getting stuck on my doors and stairs?
+NPC pathfinding algorithms require clean collision boxes. If a doorway has narrow decorative trim or if staircases lack smooth wedge collision ramps underneath, the bot's navigation mesh may fail. To fix this, simplify collision geometry around doorways and replace complex block stairs with smooth invisible ramps.
+
+### How do I save and share my Piggy Build Mode maps with friends?
+You can save your current work directly through the in-game system menu using designated save slots. To share your level with others, you can host a custom server, invite friends to your build session, or open your lobby to the public server browser so other players can join, rate, and attempt to escape your creation.
