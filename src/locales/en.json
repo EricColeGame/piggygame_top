@@ -43,22 +43,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Learn the essential survival loop, key inventory management, bot pathing evasion, and basic door unlocking rules."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Token Farming",
+          "description": "Maximize your Piggy Tokens per match with optimal survivor escape routes and high-yield elimination strategies."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "All Active Codes",
+          "description": "Discover current working codes for Piggy, redemption instructions in the settings menu, and exclusive rewards."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Piggy."
+          "title": "Escape & Ending Secrets",
+          "description": "Master multi-step chapter puzzle sequences and uncover secret prerequisite badges for the canon Hidden Ending."
         }
       ]
     },
@@ -66,73 +66,49 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Chapter 1 House",
+        "Hidden Ending",
+        "Skins Guide",
+        "Build Mode"
       ],
       "cards": [
         {
           "badge": "Beginner",
-          "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "title": "Beginner Escape Guide",
+          "description": "Essential survival tips, key item navigation, and escape strategies for new players.",
+          "href": "/guide/piggy-escape"
         },
         {
-          "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "badge": "Walkthrough",
+          "title": "Chapter 1 House",
+          "description": "Complete House map walkthrough with key spawns and door unlock sequences.",
+          "href": "/guide/piggy-chapter-1"
         },
         {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "badge": "Secrets",
+          "title": "Canon Hidden Ending",
+          "description": "Prerequisites, quest flags, and boss phases to unlock the canon Hidden Ending in Book 2.",
+          "href": "/guide/piggy-hidden-ending"
         },
         {
-          "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "badge": "Cosmetics",
+          "title": "Piggy Skins Catalog",
+          "description": "Over 200 character skins, token prices, badge unlocks, and alternate forms.",
+          "href": "/characters/piggy-skins"
         },
         {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
-        },
-        {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
-        },
-        {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
-        },
-        {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
-        },
-        {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "badge": "Creative",
+          "title": "Build Mode Guide",
+          "description": "Design custom escape rooms, wire logic triggers, and configure bot pathfinding.",
+          "href": "/modes/piggy-build-mode"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Piggy?",
       "paragraphs": [
-        "Piggy is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Piggy is an iconic survival horror puzzle game on Roblox created by MiniToon. Trapped in eerie environments with dangerous infected foes, players must cooperate to locate colored keys, tools, and code cards to unlock barricaded exits before time runs out.",
+        "With two complete story books, an intuitive Build Mode for custom map creation, and over 200 collectible skins, our comprehensive Piggy Wiki provides chapter walkthroughs, map layouts, puzzle solutions, and lore guides to master every escape."
       ],
       "stats": [
         {
@@ -145,158 +121,208 @@
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Survival Horror"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Total Visits",
+          "value": "12B+"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Skins",
+          "value": "200+"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Active Codes",
+          "value": "0"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Chapters",
+          "value": "24+"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore Piggy Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Master Roblox Piggy with complete chapter walkthroughs, map layouts, skin unlock guides, build mode tutorials, and secret ending solutions.",
       "modules": [
         {
           "order": 1,
-          "name": "Piggy Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/piggy-codes",
-          "displayType": "code-box",
+          "name": "Piggy Codes",
+          "description": "Provide the latest working Piggy codes, redemption instructions, and available rewards such as skins, tokens, or special items.",
+          "href": "/guide/piggy-quests",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "Active",
+              "detail": "No active codes currently; bookmark for future developer drops"
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "Redeem",
+              "detail": "Enter codes directly through the in-game Settings menu"
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "Rewards",
+              "detail": "Developer codes typically grant exclusive skins or Piggy Tokens"
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/piggy-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "Piggy Beginner Guide",
+          "description": "Explain the basic gameplay loop, survivor strategies, Piggy role mechanics, puzzle solving, and beginner tips to escape maps efficiently.",
+          "href": "/guide/piggy-escape",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "1",
+              "detail": "Survey room layouts and locate key exit barriers"
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "2",
+              "detail": "Gather colored keys and match them with corresponding padlocks"
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "3",
+              "detail": "Use planks, wrenches, and gears to solve mechanical locks"
+            },
+            {
+              "label": "4",
+              "detail": "Avoid bot sightlines and crawl through vents to evade the infected"
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/piggy-tier-list",
-          "displayType": "tier-grid",
+          "name": "Piggy Chapters Guide",
+          "description": "Create a complete chapter progression guide covering Book 1, Book 2, and extra story chapters with objectives and escape routes.",
+          "href": "/guide/piggy-chapters",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Book 1",
+              "detail": "12 classic chapters from Chapter 1 House to Plant facility"
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Book 2",
+              "detail": "12 expanded chapters featuring Allies and Insolence lore"
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
-            },
-            {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Puzzles",
+              "detail": "Keycard sequences, fuel canisters, and exit gate wiring"
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/piggy-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "Piggy Skins Guide",
+          "description": "Show available Piggy skins, character appearances, unlock methods, and cosmetic collections across all game books.",
+          "href": "/characters/piggy-skins",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "Tokens",
+              "detail": "Purchase iconic infected models with earned Piggy Tokens"
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "Badges",
+              "detail": "Unlock exclusive alternate outfits by clearing secret endings"
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "Events",
+              "detail": "Limited-time seasonal cosmetics and crossover event rewards"
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/piggy-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "Piggy Maps Guide",
+          "description": "Display important maps from Piggy chapters with information about layouts, escape objectives, and puzzle locations.",
+          "href": "/maps/piggy-maps",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "House",
+              "detail": "Book 1 Chapter 1 two-story residence with attic and garage"
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Outpost",
+              "detail": "Book 1 Chapter 11 military bunker with tank and soldier bots"
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Lab",
+              "detail": "Book 2 Chapter 12 high-tech facility featuring final confrontations"
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/piggy-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "Piggy Ending Guide",
+          "description": "Explain story endings, special endings, and how players can unlock different outcomes across the Piggy storyline.",
+          "href": "/guide/piggy-ending",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Bad End",
+              "detail": "Standard escape ending achieved by unlocking the final exit"
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Good End",
+              "detail": "Alternative narrative resolution saving allied survivors"
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Hidden",
+              "detail": "Canon finale requiring all chapter badges and Savior toggle"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Piggy Characters Guide",
+          "description": "Introduce major characters, infected beasts, allies, and story roles from across the Piggy universe.",
+          "href": "/characters/piggy-characters",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Penny, MiniToon & TIO — Iconic primary antagonists and masters"
+            },
+            {
+              "label": "A",
+              "detail": "Zizzy, Pony & Willow — Key survivor allies and story leaders"
+            },
+            {
+              "label": "B",
+              "detail": "Doggy, Bunny & Mr. P — Crucial early chapter companions and figures"
+            },
+            {
+              "label": "C",
+              "detail": "Supporting infected bots and chapter-specific hostile minions"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Piggy Build Mode Guide",
+          "description": "Cover Piggy Build Mode features, creation tools, custom maps, and building tips for architects.",
+          "href": "/modes/piggy-build-mode",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Open Build Mode from the Roblox hub and create a clean canvas"
+            },
+            {
+              "label": "2",
+              "detail": "Place walls, floors, and doors with grid-snapping enabled"
+            },
+            {
+              "label": "3",
+              "detail": "Distribute color-coded keys, planks, wrenches, and vents"
+            },
+            {
+              "label": "4",
+              "detail": "Spawn bot patrol nodes and test jump clearances before sharing"
             }
           ]
         }
@@ -308,23 +334,23 @@
       "items": [
         {
           "question": "What is Piggy?",
-          "answer": "Piggy is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "Piggy is a viral episodic survival horror adventure on Roblox developed by MiniToon. Players take on the role of survivors navigating puzzle-filled maps to gather keys and tools, unlock barricades, and escape while avoiding an infected killer."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "How do you escape maps in Piggy?",
+          "answer": "Escaping in Piggy requires finding colored keys to unlock corresponding doors, collecting tools like hammers and wrenches to disable barricades, and dodging the monster until the main escape route opens."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How many chapters and books are there in Piggy?",
+          "answer": "Piggy features two primary storylines: Book 1 with 12 chapters and Book 2 with 12 chapters, alongside special spinoff maps, hunt events, and custom Build Mode levels."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "How do you unlock the Hidden Ending in Piggy?",
+          "answer": "Unlocking the canon Hidden Ending in Piggy Book 2 requires obtaining all story badges across both Book 1 and Book 2, enabling the Savior Ending toggle, and completing specific puzzle triggers in Docks, Camp, and Lab."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Are there any active promo codes for Piggy?",
+          "answer": "Piggy occasionally distributes codes during major community events or merchandise releases. Check our dedicated Piggy guides page for announcements on active code drops."
         }
       ]
     },
