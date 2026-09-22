@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { CONTENT_TYPES as CONFIG_CONTENT_TYPES } from "@/config/navigation";
+import { CONTENT_TYPES as CONFIG_CONTENT_TYPES, isContentType } from "@/config/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 
 // 从统一配置导入内容类型
@@ -305,7 +305,7 @@ export function getDynamicNavigation(language: Locale = "en"): NavGroup[] {
     if (!entry.isDirectory()) continue;
     const groupSlug = entry.name;
     // 跳过不在 CONTENT_TYPES 中的目录，避免显示会 404 的导航链接
-    if (!CONTENT_TYPES.includes(groupSlug as typeof CONTENT_TYPES[number])) continue;
+    if (!isContentType(groupSlug)) continue;
     const groupDir = path.join(localeDir, groupSlug);
     const slugPaths = getSlugsFromDirectory(groupDir);
 

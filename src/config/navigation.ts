@@ -26,3 +26,14 @@ export const CONTENT_TYPES = [
   "progression",
   "community",
 ] as const;
+
+export type ContentType = (typeof CONTENT_TYPES)[number];
+
+/**
+ * 判断任意字符串是否为合法的内容分类
+ * CONTENT_TYPES 是 as const 字面量元组，其 includes() 只接受字面量联合类型，
+ * 直接传 string 会编译失败，故统一用此守卫收窄。
+ */
+export function isContentType(value: string): value is ContentType {
+  return (CONTENT_TYPES as readonly string[]).includes(value);
+}
