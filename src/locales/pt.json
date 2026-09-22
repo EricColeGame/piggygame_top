@@ -1,1 +1,445 @@
-{}
+{
+  "site": {
+    "name": "Piggy Wiki",
+    "shortName": "Piggy",
+    "tagline": "Guia de Capítulos, Skins, Códigos e Segredos de Roblox",
+    "description": "Explore a Piggy Wiki para descobrir capítulos, skins, códigos, mapas, segredos, finais, quebra-cabeças e dicas de sobrevivência de Roblox Piggy e dominar cada aventura.",
+    "legalNotice": "Wiki de fãs não oficial. Feita por jogadores, para jogadores."
+  },
+  "nav": {
+    "home": "Início",
+    "guide": "Guias",
+    "characters": "Personagens",
+    "maps": "Mapas",
+    "modes": "Modos",
+    "items": "Itens",
+    "progression": "Progressão",
+    "community": "Comunidade",
+    "menu": "Menu",
+    "toggleTheme": "Alternar tema"
+  },
+  "home": {
+    "meta": {
+      "title": "Piggy Wiki - Códigos, Skins, Capítulos e Segredos",
+      "description": "Explore a Piggy Wiki para descobrir capítulos, skins, códigos, mapas, segredos, finais, quebra-cabeças e dicas de sobrevivência de Roblox Piggy e dominar cada aventura."
+    },
+    "hero": {
+      "eyebrow": "Aventura de Terror e Sobrevivência no Roblox",
+      "title": "Piggy Wiki",
+      "description": "Piggy é um jogo de aventura e terror de sobrevivência no Roblox em que os jogadores resolvem quebra-cabeças, fogem de inimigos perigosos, exploram capítulos, colecionam skins e desvendam o mistério por trás da história de Piggy.",
+      "stats": [
+        "Mais de 12 bilhões de visitas",
+        "Mais de 200 skins disponíveis",
+        "0 códigos ativos",
+        "Atualizações sazonais"
+      ],
+      "primaryCta": "Guia para Iniciantes",
+      "secondaryCta": "Guias de Capítulos",
+      "tertiaryCta": "Códigos Ativos",
+      "videoLabel": "Mídia oficial"
+    },
+    "updates": {
+      "title": "Últimas Atualizações",
+      "browse": "Ver Todos os Guias",
+      "viewAll": "Ver Tudo"
+    },
+    "start": {
+      "eyebrow": "Comece Aqui",
+      "title": "Sua Jornada em Piggy",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guia para Iniciantes",
+          "description": "Aprenda o ciclo essencial de sobrevivência, o gerenciamento de chaves no inventário, como evitar as rotas dos bots e as regras básicas para abrir portas."
+        },
+        {
+          "number": "2",
+          "title": "Farm de Tokens",
+          "description": "Maximize seus Piggy Tokens por partida com rotas de fuga ideais para sobreviventes e estratégias eficientes de eliminação."
+        },
+        {
+          "number": "3",
+          "title": "Todos os Códigos Ativos",
+          "description": "Descubra os códigos ativos de Piggy, as instruções de resgate no menu de configurações e recompensas exclusivas."
+        },
+        {
+          "number": "4",
+          "title": "Segredos de Fuga e Finais",
+          "description": "Domine sequências de quebra-cabeças em várias etapas e descubra as insígnias secretas necessárias para o Final Oculto canônico."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas Populares",
+      "title": "Em Alta Agora",
+      "quickLinks": [
+        "Capítulo 1 House",
+        "Final Oculto",
+        "Guia de Skins",
+        "Modo Construção"
+      ],
+      "cards": [
+        {
+          "badge": "Iniciante",
+          "title": "Guia de Fuga para Iniciantes",
+          "description": "Dicas essenciais de sobrevivência, navegação por itens-chave e estratégias de fuga para novos jogadores.",
+          "href": "/guide/piggy-escape"
+        },
+        {
+          "badge": "Passo a Passo",
+          "title": "Capítulo 1 House",
+          "description": "Passo a passo completo do mapa House com pontos de surgimento de chaves e sequências de abertura de portas.",
+          "href": "/guide/piggy-chapter-1"
+        },
+        {
+          "badge": "Segredos",
+          "title": "Final Oculto Canônico",
+          "description": "Pré-requisitos, sinalizadores de missão e fases de chefe para desbloquear o Final Oculto canônico no Livro 2.",
+          "href": "/guide/piggy-hidden-ending"
+        },
+        {
+          "badge": "Cosméticos",
+          "title": "Catálogo de Skins de Piggy",
+          "description": "Mais de 200 skins de personagens, preços em tokens, desbloqueios por insígnias e formas alternativas.",
+          "href": "/characters/piggy-skins"
+        },
+        {
+          "badge": "Criativo",
+          "title": "Guia do Modo Construção",
+          "description": "Projete salas de fuga personalizadas, conecte gatilhos lógicos e configure a navegação dos bots.",
+          "href": "/modes/piggy-build-mode"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "O que é Piggy?",
+      "paragraphs": [
+        "Piggy é um icônico jogo de quebra-cabeça e terror de sobrevivência no Roblox criado por MiniToon. Presos em ambientes sinistros com perigosos infectados, os jogadores precisam cooperar para encontrar chaves coloridas, ferramentas e cartões de código para destrancar saídas bloqueadas antes que o tempo acabe.",
+        "Com dois livros de história completos, um Modo Construção intuitivo para criar mapas personalizados e mais de 200 skins colecionáveis, nossa abrangente Piggy Wiki oferece guias de capítulos, layouts de mapas, soluções de quebra-cabeças e guias de lore para dominar cada fuga."
+      ],
+      "stats": [
+        {
+          "label": "Desenvolvedor",
+          "value": "MiniToon"
+        },
+        {
+          "label": "Plataforma",
+          "value": "Roblox"
+        },
+        {
+          "label": "Gênero",
+          "value": "Terror e Sobrevivência"
+        },
+        {
+          "label": "Total de Visitas",
+          "value": "12B+"
+        },
+        {
+          "label": "Skins",
+          "value": "200+"
+        },
+        {
+          "label": "Códigos Ativos",
+          "value": "0"
+        },
+        {
+          "label": "Capítulos",
+          "value": "24+"
+        }
+      ],
+      "cta": "Explorar Todos os Guias"
+    },
+    "explore": {
+      "title": "Explore a Piggy Wiki",
+      "description": "Domine o Roblox Piggy com passo a passo completo dos capítulos, layouts de mapas, guias de desbloqueio de skins, tutoriais do Modo Construção e soluções de finais secretos.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Códigos de Piggy",
+          "description": "Reúna os códigos ativos mais recentes de Piggy, instruções de resgate e recompensas disponíveis, como skins, tokens ou itens especiais.",
+          "href": "/guide/piggy-quests",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Ativo",
+              "detail": "Nenhum código ativo no momento; salve a página para futuros lançamentos"
+            },
+            {
+              "label": "Resgatar",
+              "detail": "Insira os códigos diretamente no menu de Configurações do jogo"
+            },
+            {
+              "label": "Recompensas",
+              "detail": "Códigos de desenvolvedor geralmente concedem skins exclusivas ou Piggy Tokens"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Guia para Iniciantes de Piggy",
+          "description": "Explique o ciclo básico de jogo, estratégias de sobrevivente, mecânicas do papel de Piggy, resolução de quebra-cabeças e dicas para iniciantes escaparem dos mapas com eficiência.",
+          "href": "/guide/piggy-escape",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Analise o layout das salas e localize as principais barreiras de saída"
+            },
+            {
+              "label": "2",
+              "detail": "Reúna chaves coloridas e combine-as com os cadeados correspondentes"
+            },
+            {
+              "label": "3",
+              "detail": "Use tábuas, chaves inglesas e engrenagens para resolver fechaduras mecânicas"
+            },
+            {
+              "label": "4",
+              "detail": "Evite as linhas de visão dos bots e rasteje pelos dutos para escapar dos infectados"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Guia de Capítulos de Piggy",
+          "description": "Crie um guia completo de progressão de capítulos cobrindo o Livro 1, o Livro 2 e capítulos extras, com objetivos e rotas de fuga.",
+          "href": "/guide/piggy-chapters",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Livro 1",
+              "detail": "12 capítulos clássicos, do Capítulo 1 House à instalação Plant"
+            },
+            {
+              "label": "Livro 2",
+              "detail": "12 capítulos expandidos com a lore de Allies e Insolence"
+            },
+            {
+              "label": "Quebra-cabeças",
+              "detail": "Sequências de cartões-chave, botijões de combustível e fiação do portão de saída"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Guia de Skins de Piggy",
+          "description": "Mostre as skins disponíveis de Piggy, aparências dos personagens, métodos de desbloqueio e coleções cosméticas em todos os livros do jogo.",
+          "href": "/characters/piggy-skins",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Tokens",
+              "detail": "Compre modelos icônicos de infectados com os Piggy Tokens conquistados"
+            },
+            {
+              "label": "Insígnias",
+              "detail": "Desbloqueie trajes alternativos exclusivos ao concluir finais secretos"
+            },
+            {
+              "label": "Eventos",
+              "detail": "Cosméticos sazonais por tempo limitado e recompensas de eventos crossover"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Guia de Mapas de Piggy",
+          "description": "Apresente os mapas importantes dos capítulos de Piggy com informações sobre layouts, objetivos de fuga e localização de quebra-cabeças.",
+          "href": "/maps/piggy-maps",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "House",
+              "detail": "Livro 1, Capítulo 1: residência de dois andares com sótão e garagem"
+            },
+            {
+              "label": "Outpost",
+              "detail": "Livro 1, Capítulo 11: bunker militar com tanque e bots soldados"
+            },
+            {
+              "label": "Lab",
+              "detail": "Livro 2, Capítulo 12: instalação de alta tecnologia com os confrontos finais"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Guia de Finais de Piggy",
+          "description": "Explique os finais da história, finais especiais e como os jogadores podem desbloquear resultados diferentes na trama de Piggy.",
+          "href": "/guide/piggy-ending",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Final Ruim",
+              "detail": "Final de fuga padrão, obtido ao destrancar a saída final"
+            },
+            {
+              "label": "Final Bom",
+              "detail": "Desfecho narrativo alternativo que salva os sobreviventes aliados"
+            },
+            {
+              "label": "Oculto",
+              "detail": "Final canônico que exige todas as insígnias de capítulo e o botão Salvador ativado"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Guia de Personagens de Piggy",
+          "description": "Apresente os principais personagens, bestas infectadas, aliados e papéis na história de todo o universo Piggy.",
+          "href": "/characters/piggy-characters",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Penny, MiniToon e TIO — Antagonistas principais icônicos e mestres"
+            },
+            {
+              "label": "A",
+              "detail": "Zizzy, Pony e Willow — Aliados sobreviventes essenciais e líderes da história"
+            },
+            {
+              "label": "B",
+              "detail": "Doggy, Bunny e Mr. P — Companheiros e figuras cruciais dos primeiros capítulos"
+            },
+            {
+              "label": "C",
+              "detail": "Bots infectados coadjuvantes e lacaios hostis específicos de cada capítulo"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Guia do Modo Construção de Piggy",
+          "description": "Cubra os recursos do Modo Construção de Piggy, ferramentas de criação, mapas personalizados e dicas de construção para arquitetos.",
+          "href": "/modes/piggy-build-mode",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Abra o Modo Construção no hub do Roblox e crie uma tela em branco"
+            },
+            {
+              "label": "2",
+              "detail": "Posicione paredes, pisos e portas com o encaixe em grade ativado"
+            },
+            {
+              "label": "3",
+              "detail": "Distribua chaves coloridas, tábuas, chaves inglesas e dutos"
+            },
+            {
+              "label": "4",
+              "detail": "Crie pontos de patrulha dos bots e teste as alturas de salto antes de compartilhar"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "description": "Respostas rápidas para as perguntas mais comuns sobre Piggy.",
+      "items": [
+        {
+          "question": "O que é Piggy?",
+          "answer": "Piggy é uma aventura episódica de terror e sobrevivência viral no Roblox, desenvolvida por MiniToon. Os jogadores assumem o papel de sobreviventes que percorrem mapas cheios de quebra-cabeças para reunir chaves e ferramentas, destrancar barricadas e fugir enquanto evitam um assassino infectado."
+        },
+        {
+          "question": "Como escapar dos mapas em Piggy?",
+          "answer": "Para escapar em Piggy é preciso encontrar chaves coloridas para abrir as portas correspondentes, reunir ferramentas como martelos e chaves inglesas para remover barricadas e desviar do monstro até que a rota de fuga principal se abra."
+        },
+        {
+          "question": "Quantos capítulos e livros existem em Piggy?",
+          "answer": "Piggy tem duas histórias principais: o Livro 1, com 12 capítulos, e o Livro 2, com 12 capítulos, além de mapas especiais derivados, eventos de caça e níveis personalizados do Modo Construção."
+        },
+        {
+          "question": "Como desbloquear o Final Oculto em Piggy?",
+          "answer": "Desbloquear o Final Oculto canônico em Piggy Livro 2 exige obter todas as insígnias de história dos Livros 1 e 2, ativar o botão Final Salvador e completar gatilhos de quebra-cabeça específicos em Docks, Camp e Lab."
+        },
+        {
+          "question": "Existem códigos promocionais ativos para Piggy?",
+          "answer": "Piggy distribui códigos ocasionalmente durante grandes eventos da comunidade ou lançamentos de produtos. Confira nossa página dedicada de guias de Piggy para anúncios de novos códigos."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Pronto para Escapar de Piggy?",
+      "description": "Dos seus primeiros passos no Capítulo 1 House até os finais secretos com insígnias, nossa wiki comunitária oferece guias gratuitos e atualizados.",
+      "primary": "Ler o Guia para Iniciantes",
+      "secondary": "Jogar no Roblox"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Navegação da Wiki",
+    "activeCodes": "Códigos Ativos",
+    "updated": "Atualizado",
+    "viewAllCodes": "Ver todos os códigos",
+    "playOnRoblox": "Jogar no Roblox",
+    "inThisSection": "Nesta seção",
+    "tableOfContents": "Índice",
+    "nextSteps": "Próximos Passos",
+    "needHelp": "Precisa de Ajuda?",
+    "relatedReading": "Leitura Relacionada",
+    "relatedGuides": "Guias Relacionados",
+    "readMore": "Ler mais",
+    "officialMedia": "Mídia oficial",
+    "home": "Início",
+    "noGuidesAvailable": "Nenhum guia disponível ainda. Volte em breve!",
+    "readFullGuide": "Ler o Guia Completo",
+    "noActiveCodes": "Nenhum código ativo no momento",
+    "checkBackSoon": "Volte em breve para novos códigos",
+    "codesComingSoon": "COMING-SOON",
+    "codesStayTuned": "STAY-TUNED"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "O guia que você procura pode ter sido movido ou ainda não foi adicionado.",
+    "cta": "Ver Guias"
+  },
+  "footer": {
+    "aboutTitle": "Piggy Wiki",
+    "about": "A Piggy Wiki é um hub de guias independente criado por fãs, cobrindo capítulos, skins, códigos, mapas, segredos e quebra-cabeças de Roblox Piggy para jogadores de terror e sobrevivência do mundo todo.",
+    "quickLinks": "Links Rápidos",
+    "guides": "Guias",
+    "legal": "Legal",
+    "copyright": "© 2026 Piggy Wiki. Não afiliada à MiniToon ou à Roblox Corporation.",
+    "description": "Jogo de aventura e terror de sobrevivência no Roblox. Escape de salas, resolva quebra-cabeças, colecione skins e descubra segredos.",
+    "playGame": "Jogar Piggy",
+    "officialDiscord": "Discord Oficial",
+    "officialYoutube": "YouTube Oficial",
+    "vvBuilder": "Hub de Guias de Piggy",
+    "beginnerGuide": "Guia para Iniciantes",
+    "raceGuides": "Guias de Capítulos",
+    "bossGuides": "Guias de Monstros e Skins",
+    "buildGuide": "Guia de Fuga",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço"
+  },
+  "guide": {
+    "overviewTitle": "Guias e Passo a Passo de Piggy",
+    "overviewDescription": "Domine cada capítulo, quebra-cabeça e sequência de fuga no Roblox Piggy com passo a passo detalhado e estratégias de sobrevivência."
+  },
+  "characters": {
+    "overviewTitle": "Personagens e Skins de Piggy",
+    "overviewDescription": "Explore biografias completas, companheiros sobreviventes aliados, monstros infectados inimigos e skins desbloqueáveis em Piggy."
+  },
+  "maps": {
+    "overviewTitle": "Mapas e Locais dos Capítulos de Piggy",
+    "overviewDescription": "Navegue por todos os mapas dos Livros 1 e 2 com layouts completos, pontos de surgimento de itens e rotas de fuga."
+  },
+  "modes": {
+    "overviewTitle": "Modos de Jogo e Partidas Personalizadas de Piggy",
+    "overviewDescription": "Descubra todas as variações de jogo, incluindo Traidor, Infecção, Enxame, Modo Construção e experiências personalizadas da comunidade."
+  },
+  "items": {
+    "overviewTitle": "Itens, Chaves e Ferramentas de Piggy",
+    "overviewDescription": "Banco de dados completo com todas as chaves, ferramentas, armas, células de energia e itens de missão necessários para escapar de cada capítulo."
+  },
+  "progression": {
+    "overviewTitle": "Atualizações, Missões e Progressão de Piggy",
+    "overviewDescription": "Acompanhe a evolução de Piggy com registros de atualização, prévias de conteúdo futuro, recompensas de temporada e notícias de Intercity."
+  },
+  "community": {
+    "overviewTitle": "Lore, Comunidade e Mídia de Piggy",
+    "overviewDescription": "Mergulhe nas teorias da lore de Piggy, destaques da trilha sonora, listas de níveis de criadores e canais oficiais da comunidade."
+  }
+}

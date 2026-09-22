@@ -32,6 +32,6 @@ export const siteConfig: SiteConfig = {
     discord: "https://discord.gg/piggy",
     youtube: "https://www.youtube.com/@MiniToon",
   },
-  locales: ["en", "es", "pt", "de", "fr"],
+  locales: ["en", "es", "pt", "de"],
   defaultLocale: "en",
 };
